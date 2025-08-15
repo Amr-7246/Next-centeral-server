@@ -1,0 +1,57 @@
+{
+  "navBar": {
+    "options": [
+      { "name": "Home", "href": "/", "fake_href": "/" },
+      { "name": "Capabilities ", "href": "/capabilities", "fake_href": "/capabilities" },
+      { "name": "Laser cutting ", "href": "/lasercutting", "fake_href": "/lasercutting" },
+      { "name": "Fabrication ", "href": "/fabrication", "fake_href": "/fabrication" },
+      { "name": "about", "href": "/about", "fake_href": "/about" },
+      { "name": "contact us", "href": "/contact", "fake_href": "/contact" }
+    ],
+    "login": "log in",
+    "signin": "sign in",
+    "signup": "sign up",
+    "signout": "sign out"
+  },
+  "hero": {
+    "headline": "Book Appointment with trusted Doctors",
+    "bookNow": "Book Now",
+    "learnMore": "More about us"
+  },
+  "speciality": {
+    "headline": "Find by speciality",
+    "discription": "simply exploor our trusted doctors depending on the speciality",
+    "seeDoctors": "see all doctors"
+  },
+  "appointment": {
+    "banner": {
+      "headline": "Book Appointment with more than 100 trusted Doctors",
+      "createAccount": "create account"
+    }
+  },
+  "contact" : {
+    "header": "Get in Touch with Us",
+    "mainText": "We’re here to answer your questions, assist with appointments, and provide the best support possible.",
+    "Whether" : "you’re a patient, a healthcare professional, or a partner, we’re just a call or message away.",
+    "phone": "+1 (555) 987-6543",
+    "email": "support@clinicmanagerapp.com",
+    "address": "123 Health Avenue, Medical City, USA",
+    "workingHours": "Mon – Sat: 9:00 AM – 7:00 PM"
+  },
+  "about" : {
+    "header" : "About us",
+    "mainText1": "Our Clinic Manager App is your all-in-one solution for modern healthcare operations.  Designed for doctors, administrators, and clinic owners, it streamlines patient registration,  appointment scheduling, and secure medical records — all in one unified platform.  With intuitive navigation and a clean interface, managing your clinic has never been this effortless.",
+    "mainText2": "Experience the future of healthcare management with advanced digital tools.  Our system integrates billing, pharmacy inventory, and multi-branch support,  ensuring every department stays connected. Built with robust security and  cloud-first architecture, your sensitive patient data is always protected.",
+    "mainText3": "Focus on what truly matters — patient care.  From quick check-ins to real-time medical history access, our Clinic Manager App  empowers your team to deliver faster, more personalized service.  Boost efficiency, reduce administrative workload, and elevate your patient experience.",
+    "mainText" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus cum ullam perferendis quo dolore molestiae porro assumenda voluptatem aliquid libero officiis non quisquam, vero alias fugit mollitia doloremque deleniti."
+  },
+  "adminPanal": {
+    "ControlPanal": [
+      { "name": "Dashboard", "href": "/admin" },
+      { "name": "Add Doctor", "href": "/admin/addDoctor" },
+      { "name": "Doctors List", "href": "/admin/showDoctors" },
+      { "name": "Appointments", "href": "/admin/showAppointments" },
+      { "name": "patients", "href": "/admin/patients"  }
+    ]
+  }
+}

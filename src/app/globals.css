@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&family=Shafarik&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@config "../../tailwind.config.js";
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {}
+
+@layer base {
+
+  :root {
+    --bg: rgb(255, 221, 198);
+    --inverted-bg: #160600;
+    --surface: #d44e18;
+    --hovered: #aaaaaa;
+    --btn_I: #5c3ad8;
+    --btn_II: #ffffff;
+    --text: #e23c1f;
+    --text-secondary: #363636;
+    --text-inverted: rgb(255, 201, 164);
+    --border: rgb(49, 49, 49);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --input: #ffffff;
+    --from: #cdc0ff;
+    --via: #5c3ad8;
+    --to: #cdc0ff;
+  }
+
+  .dark {
+      --bg: #0c081d;
+      --surface: #5c3ad8;
+      --hovered: #888888;
+      --btn_I: #5c3ad8;
+      --btn_II: #ffffff;
+      --text: #202020;
+      --text-secondary: #7c7c7c;
+      --text-inverted: #ffffff;
+      --border: rgb(49, 49, 49);
+      --shadow: rgba(0, 0, 0, 0.1);
+      --input: #ffffff;
+      --from: #cdc0ff;
+      --via: #5c3ad8;
+      --to: #cdc0ff;
+  }
+
+}
+
+
+@layer base {
+
+  /* & Start Global Repeated utilites  */
+  body {
+    /* font-family: "Rubik Distressed", system-ui; */
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Mozilla Headline", sans-serif !important ;
+    @apply bg-bg font-bold duration-800 pt-[80px];
+  }
+  .flex-center {
+    @apply flex justify-center items-center
+  }
+  .page {
+    @apply w-[95%] md:w-[85%] max-w-[1200px] mx-auto py-10 min-h-[60vh];
+  }
+  .btn {
+  font-family: "Winky Rough", sans-serif;
+    @apply cursor-pointer duration-[800ms] px-6 py-3 bg-main-btn text-white  rounded-lg border border-transparent hover:text-main-btn hover:border-main-btn  hover:bg-transparent  font-bold shadow-lg hover:shadow-sky-400/20 transition-all;
+  }
+  .btn_I {
+    font-family: "Winky Rough", sans-serif;
+    @apply cursor-pointer  duration-[800ms] px-6 py-3 bg-main-btn text-white  rounded-lg border border-transparent hover:text-main-btn hover:border-main-btn  hover:bg-transparent  font-bold shadow-lg hover:shadow-sky-400/20 transition-all;
+  }
+  .btn_II {
+    font-family: "Winky Rough", sans-serif;
+    @apply cursor-pointer duration-[800ms] px-6 py-3 bg-sec-btn text-text  rounded-lg border border-transparent hover:text-sec-btn hover:border-sec-btn  hover:bg-transparent  font-bold shadow-lg hover:shadow-sky-400/20 transition-all;
+  }
+  .warBtn {
+    font-family: "Winky Rough", sans-serif;
+    @apply cursor-pointer duration-[800ms] px-6 py-3 bg-warn-btn text-text  rounded-lg border border-transparent hover:text-warn-btn hover:border-warn-btn  hover:bg-transparent  font-bold shadow-lg hover:shadow-sky-400/20 transition-all;
+  }
+  .input {
+    @apply p-2 border border-black rounded-lg ;
+  }
+
+  .form-label {
+    @apply block text-text text-sm font-medium mb-2 font-['Dosis'];
+  }
+
+  .form-container {
+    @apply backdrop-blur-sm bg-bg p-6 rounded-xl
+    border border-border shadow-lg w-full;
+  }
+
+  .form-group {
+    @apply mb-4 relative flex flex-col gap-3;
+  }
+/* & End Global Repeated utilites  */
+}
+
