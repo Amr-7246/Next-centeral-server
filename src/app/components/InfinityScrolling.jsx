@@ -32,7 +32,7 @@ const scrollingItems = [
   // Repeat or add more as needed
 ]
 
-const InfinityScrolling = () => {
+const InfinityScrolling = ({scrollingItems}) => {
   const wrapperRef = useRef(null)
   const trackRef = useRef(null)
 

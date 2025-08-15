@@ -4,13 +4,16 @@ import Image from "next/image";
 import TextAnimator from "@/animations/TextAnimator";
 import { FaHeartbeat, FaHospitalUser, FaLaptopMedical } from "react-icons/fa";
 import { textContent } from "@/pub/assets";
+import Working from "@/components/Working";
 
 const content = textContent.about;
 
 export default function Page() {
   return (
-    <div className="flex-center lg:!items-start flex-col lg:flex-row gap-5">
-      {/* About Image */}
+    <div className="flex-center lg:!items-start flex-col lg:flex-row gap-5 h-screen relative">
+      {/* About Image */}      
+      <Working/>
+      
       <Image
         className=" rounded-lg w-[80%] lg:w-[30%]"
         src={logo}

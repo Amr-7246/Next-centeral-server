@@ -1,3 +1,4 @@
+import Working from "@/components/Working";
 import { logo, textContent } from "@/pub/assets";
 import Image from "next/image";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
@@ -6,7 +7,8 @@ const content = textContent.contact
 
 export default function Page() {
   return (
-    <div className="p-6 rounded-lg shadow-lg shadow-black">
+    <div className="p-6 rounded-lg shadow-lg shadow-black  h-screen relative">
+      <Working/>
       <h2 className="text-2xl font-bold text-text mb-5 flex items-center gap-2">
         <FaEnvelope className="text-text" />
         {content.header}

@@ -64,7 +64,7 @@ const TextWithImg = () => {
         <div className='flex-center gap-3 flex-col'>
           <h2 className='text-[25px] text-bg-dark' >Our Manufacturing Services</h2>
           <p className='text-[20px] text-bg-dark/50' >Comprehensive solutions for your production needs</p>
-          <InfinityScrolling />
+          <InfinityScrolling scrollingItems={scrollingItems} />
         </div>
     </div>
   )
