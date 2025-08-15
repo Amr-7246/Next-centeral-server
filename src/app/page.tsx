@@ -1,5 +1,4 @@
 "use client"
-import { Home } from "@/tools/MultipleLangSupport/Data/pages";
 import Hero from "./components/Hero";
 import TextWithImg from "./components/TextWithImg";
 
