@@ -10,10 +10,10 @@ const content = textContent.about;
 
 export default function Page() {
   return (
-    <div className="flex-center lg:!items-start flex-col lg:flex-row gap-5 h-screen relative">
-      {/* About Image */}      
+    <div className="flex-center lg:!items-start flex-col lg:flex-row gap-5 h-screen relative overflow-hidden">
+      {/* About Image */}
       <Working/>
-      
+
       <Image
         className=" rounded-lg w-[80%] lg:w-[30%]"
         src={logo}
@@ -22,7 +22,7 @@ export default function Page() {
 
       {/* Info Cards */}
       <div className="flex-center items-start flex-row flex-wrap gap-5 lg:w-[65%] w-full ">
-        
+
         {/* Card 1 */}
         <div className="bg-white overflow-hidden pb-5 rounded-lg shadow-lg shadow-black w-full lg:w-[97%] flex flex-col items-start gap-3">
           <div className="w-full flex-center py-5 bg-indigo-100 border-b-2 border-indigo-200">

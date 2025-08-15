@@ -26,7 +26,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
                 <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
                 {children}
               </div>
-              <Footer/>
+              {/* <Footer/> */}
             </QueryProviders>
           </UserInfoContextProvider>
       </body>

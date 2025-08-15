@@ -7,9 +7,9 @@ import Working from '@/components/Working'
 
 const CapabilitiesPage = () => {
   return (
-    <div className="bg-bg text-textSecondary relative h-screen">
+    <div className="bg-bg text-textSecondary relative h-screen overflow-hidden">
       <Working/>
-    
+
       {/* HERO SECTION */}
       <section className="relative bg-bg dark:bg-bg-dark py-12 md:py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -18,10 +18,10 @@ const CapabilitiesPage = () => {
               Southern Engineering – Capacity & Capability
             </h1>
             <p className="text-lg">
-              Ensuring Efficiency for Your Business.  
+              Ensuring Efficiency for Your Business.
               We deliver precision components and sub-assemblies of unparalleled quality across Australia.
               Trusted by manufacturers nationwide, we work as an extension of your business—offering
-              practical insights and clear communication every step of the way.  
+              practical insights and clear communication every step of the way.
               From concept to completion, we help shape your vision with the benefit of real-world
               manufacturing experience.
             </p>

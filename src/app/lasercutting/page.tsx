@@ -8,7 +8,7 @@ import Working from '@/components/Working'
 
 const LaserCuttingPage = () => {
   return (
-    <div className="bg-bg text-textSecondary relative h-screen">
+    <div className="bg-bg text-textSecondary relative h-screen overflow-hidden">
       <Working/>
       {/* HERO SECTION */}
         <section className="relative bg-bg dark:bg-bg-dark py-12 md:py-20 px-6 md:px-16">
@@ -18,7 +18,7 @@ const LaserCuttingPage = () => {
                 Laser Cutting Excellence
               </h1>
               <p className="text-lg">
-                Our advanced laser cutting delivers flawless results, from intricate designs 
+                Our advanced laser cutting delivers flawless results, from intricate designs
                 to heavy-duty precision cuts. Tailored for both creative and industrial applications.
               </p>
             </div>
@@ -63,7 +63,7 @@ const LaserCuttingPage = () => {
             <FaRulerCombined /> CNC Folding
           </h2>
           <p className="max-w-3xl mb-6">
-            Achieve crisp lines and perfect angles with accurate CNC folding 
+            Achieve crisp lines and perfect angles with accurate CNC folding
             tailored to your exact specifications. (Folding length, width, thickness specs to be added)
           </p>
           <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
