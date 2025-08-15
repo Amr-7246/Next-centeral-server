@@ -7,7 +7,7 @@ const content = textContent.contact
 
 export default function Page() {
   return (
-    <div className="p-6 rounded-lg shadow-lg shadow-black h-screen relative overflow-hidden">
+    <div className="rounded-lg shadow-lg shadow-black h-screen relative overflow-hidden">
       <Working/>
       <h2 className="text-2xl font-bold text-text mb-5 flex items-center gap-2">
         <FaEnvelope className="text-text" />
