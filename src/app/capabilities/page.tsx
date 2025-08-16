@@ -6,6 +6,7 @@ import { FaHandshake, FaIndustry, FaProjectDiagram } from 'react-icons/fa'
 import CapabilitiesHero from './CapabilitiesHero'
 import Footer from '../components/Footer'
 import LayerMask from '../components/LayerMask'
+import Topper from '@/components/Topper'
 
 const CapabilitiesPage = () => {
   return (
@@ -13,7 +14,7 @@ const CapabilitiesPage = () => {
       <CapabilitiesHero />
 
       {/* CORE VALUES / STRENGTHS */}
-      <section className="relative overflow-hidden py-12 px-6 md:px-16 bg-bg-dark dark:bg-surface-dark text-textInverted">
+      <section className="relative overflow-hidden py-[100px] px-6 md:px-16 bg-bg-dark dark:bg-surface-dark text-textInverted">
         <LayerMask/>
           <p className="relative pl-5 text-lg md:text-xl font-light text-white/90 w-full my-10 drop-shadow">
             Ensuring Efficiency for Your Business.  
@@ -63,7 +64,16 @@ const CapabilitiesPage = () => {
           ))}
         </div>
       </section>
-      <Footer/>
+      <div className="relative">
+        <Topper 
+          className={''}
+          direction = {"top"}
+          shapeColor = {"#ffddc6"}
+          circleColor ={ "#ffddc6"}
+          iconColor = {"#000000"}
+        />
+        <Footer/>
+      </div>
     </div>
   )
 }
