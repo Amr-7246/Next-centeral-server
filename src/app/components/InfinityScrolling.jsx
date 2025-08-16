@@ -73,7 +73,7 @@ const InfinityScrolling = ({scrollingItems}) => {
                   className="w-[400px] bg-white shadow-lg overflow-hidden  shadow-black/20 border border-stone-300 rounded-xl flex flex-col items-center gap-4 pb-5 hover:shadow-2xl transition-shadow duration-300"
                 >
                   {/* Image */}
-                  <div className="w-full h-[260px] relative overflow-hidden ">
+                  <div className="w-full h-[300px] relative overflow-hidden ">
                     <Image
                       src={item.icon}
                       alt={item.label}
@@ -96,7 +96,7 @@ const InfinityScrolling = ({scrollingItems}) => {
                   )}
 
                   {/* Link */}
-                  <Link href="/contact">
+                  <Link href="/lasercutting">
                     <button className="cursor-pointer mt-auto px-4 py-2 bg-stone-800 text-white rounded-lg text-sm hover:bg-stone-700 transition-colors">
                       Learn More
                     </button>
