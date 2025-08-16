@@ -8,7 +8,7 @@ const content = textContent
 
 const Footer = () => {
   return (
-    <footer className='relative bg-bg-dark py-[50px] text-text-inverted'>
+    <footer className='relative bg-bg-dark py-[100px] text-text-inverted'>
       <LayerMask />
 
       {/* Top: Logo + About */}
