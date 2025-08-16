@@ -3,7 +3,7 @@
     "options": [
       { "name": "Home", "href": "/", "fake_href": "/" },
       { "name": "Capabilities ", "href": "/capabilities", "fake_href": "/capabilities" },
-      { "name": "Laser cutting ", "href": "/lasercutting", "fake_href": "/lasercutting" },
+      { "name": "Lazer cutting ", "href": "/lasercutting", "fake_href": "/lasercutting" },
       { "name": "Fabrication ", "href": "/fabrication", "fake_href": "/fabrication" },
       { "name": "about", "href": "/about", "fake_href": "/about" },
       { "name": "contact us", "href": "/contact", "fake_href": "/contact" }
