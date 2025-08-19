@@ -14,22 +14,20 @@ export const metadata: Metadata = {
   }
 };
 
-export default async function RootLayout({ children, params }: Readonly<{ children: React.ReactNode; params: { locale: string }; }>) {
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={params.locale}>
+    <html lang="en">
       <body className={` font-[Rubik-Distressed] `}>
-          <UserInfoContextProvider>
-            <QueryProviders>
-              {/* <GlobalNav /> */}
-              <div className="">
-                <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
-                {children}
-              </div>
-              {/* <Footer/> */}
-            </QueryProviders>
-          </UserInfoContextProvider>
+        <UserInfoContextProvider>
+          <QueryProviders>
+            <div>
+              <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
+              {children}
+            </div>
+          </QueryProviders>
+        </UserInfoContextProvider>
       </body>
     </html>
   );
 }
+
