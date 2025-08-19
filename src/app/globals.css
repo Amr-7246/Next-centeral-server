@@ -56,7 +56,7 @@
     font-weight: 400;
     font-style: normal;
     font-family: "Mozilla Headline", sans-serif !important ;
-    @apply bg-bg font-bold duration-800 pt-[80px];
+    @apply bg-bg font-bold duration-800 ;
   }
   .flex-center {
     @apply flex justify-center items-center

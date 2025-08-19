@@ -21,7 +21,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
       <body className={` font-[Rubik-Distressed] `}>
           <UserInfoContextProvider>
             <QueryProviders>
-              <GlobalNav />
+              {/* <GlobalNav /> */}
               <div className="">
                 <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
                 {children}

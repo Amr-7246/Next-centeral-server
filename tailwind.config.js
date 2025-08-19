@@ -70,6 +70,13 @@ module.exports = {
         gradientTo: {
           DEFAULT: '#cdc0ff',
         },
+        //& Low Firm colors . . 
+        'lf-db': '#000349',
+        'lf-b': '#0C1B63',
+        'lf-w': '#FFFFFF',
+        'lf-dw': '#D9D9E2',
+        'lf-dy': '#E6A61E',
+        'lf-g': '#252B3D',
       },
     },
   },
