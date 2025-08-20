@@ -34,10 +34,14 @@ const ClientsSays = () => {
   return (
     <section className="relative py-20 px-6 overflow-hidden bg-black/80 h-screen ">
       <Image src={porcalenProject.img_3} alt={"layerMask"} className="absolute -z-1 inset-0 w-full h-full object-cover " />
+      {/*//& Logo */}
+        <div className="font-bitcount z-10 py-3 absolute top-5 left-15 flex text-porc-b font-bold text-[25px] flex-center gap-3">
+          <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
+          Ceramora
+        </div>
 
       {/*//& fourest layer */}
         <div className="relative flex-center flex-col w-full mt-[10vh] mb-[20vh]">
-
           <div className='relative overflow-hidden z-5 rounded-4xl w-[90%] h-[250px] flex  text-lf-dw '>
             <Image
               src={porcalenProject.img_2}
