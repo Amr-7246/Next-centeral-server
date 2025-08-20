@@ -14,19 +14,20 @@ const WideNavbar = () => {
   const curentPath = usePathname()
   return (
     <div>
-      <nav  className=' bg-gray-900 shadow-lg fixed top-0 shadow-black/30 px-[20px] py-6 hidden border-b border-[var(--border)] lg:px-[50px] md:!flex !justify-between items-center gap-3 h-fit w-[100%] !mx-auto z-30'>
-        {/*//& Logo */}
-          <div className=' flex-center flex-row gap-1 text-[35px]'>
-            <span className="text-amber-400">MAC</span>{" "}
-            <span
-              style={{
-                color: "transparent",
-                WebkitTextStroke: "1px white",
-              }}
-            >
-              Consulting
-            </span>
-          </div>
+      <nav  className=' bg-mac-db shadow-lg fixed top-0 shadow-black/30 px-[20px] py-2 hidden border-b border-[var(--border)] lg:px-[50px] md:!flex !justify-between items-center gap-3 h-fit w-[100%] !mx-auto z-30'>
+          {/*//& Logo */}
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-[32px] bg-black rounded-full w-14 h-14 flex items-center justify-center font-extrabold text-xl">
+                <span className="text-white">M</span>
+                <span className="text-mac-dy">A</span>
+                <span className="text-blue-900">C</span>
+              </div>
+                <span
+                  className="text-[25px]"
+                  style={{ color: "transparent", WebkitTextStroke: "1px white", }} >
+                    Consulting
+                </span>
+            </div>
         {/*//& Nav Links */}
           <div className='flex-center lg:gap-8 gap-4 text-white mr-[50px]'>
               {content.navBar.options.map((option, idx) => (

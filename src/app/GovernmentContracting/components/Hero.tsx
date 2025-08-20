@@ -7,7 +7,7 @@ import { FaCheckCircle, FaBookOpen, FaArrowRight } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <div className="relative w-full lg:min-h-[90vh] min-h-[100vh] mt-[-55px] text-white overflow-hidden flex items-center">
+    <div className="relative w-full lg:min-h-[100vh] min-h-[100vh] mt-[-55px] text-white overflow-hidden flex items-center">
       {/*//& Background img Layer */}
       <div className="top-0  absolute z-2 w-full h-full ">
         <Image
@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/*//& Overlay Mask */}
-      <span className="absolute inset-0 z-3 w-full h-full bg-gray-900/96" />
+      <span className="absolute inset-0 z-3 w-full h-full bg-mac-db/96" />
 
       {/*//& Decorative Circles */}
         <div className="absolute inset-0 z-[5] flex items-center justify-center pointer-events-none">

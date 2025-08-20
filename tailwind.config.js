@@ -100,6 +100,10 @@ module.exports = {
         'porc-ds': '#64748B',
         'porc-g': '#34D399',    
         'porc-dg': '#10B981',
+        //& MAC consulting colors . .
+        'mac-db': '#002147',
+        'mac-dy': '#B8860B'
+
       },
     },
   },
