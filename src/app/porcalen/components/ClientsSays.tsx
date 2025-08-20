@@ -44,9 +44,9 @@ const ClientsSays = () => {
               alt={"layerMask"}
               className="absolute z-1 inset-0 w-full h-full object-cover "
             />
-            <div className='relative flex items-start justify-start p-5 flex-col gap-3 bg-black/30 backdrop-blur-sm w-full h-full z-2 '>
-              <h2 className="z-2 text-center text-black text-[27px] w-[90%] mx-auto">
-                Premium Ceramic Collections Designed to Last a Lifetime
+            <div className='relative flex items-start justify-start p-5  flex-col gap-3 bg-black/40 backdrop-blur-sm w-full h-full z-2 '>
+              <h2 className=" font-winky font-black z-2 text-center text-transparent bg-clip-text mt-5 bg-gradient-to-r from-sky-400 via-white to-sky-400 text-[30px] w-fit mx-auto">
+                Our clients are the truest reflection of our work
               </h2>
             </div>
           </div>
@@ -102,8 +102,6 @@ const ClientsSays = () => {
                   <span className="w-[150px] rounded-tl-2xl absolute h-[80px] border border-b-0 border-r-0 border-white left-0 top-0" />
                   <span className="w-[80px] rounded-br-2xl absolute h-[150px] border border-t-0 border-l-0 border-porc-b right-0 bottom-0" />
 
-                  {/* Subtle background flair */}
-                  <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-porc-b/10 rounded-full blur-2xl z-0" />
                 </div>
               ))}
             </div>
@@ -112,7 +110,7 @@ const ClientsSays = () => {
 
       {/*//& Markting Hook */}
         <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[20%] left-[3%] '> 
-          <p className='text-porc-db text-[18px] text-center'> Elevate your home with ceramics that blend beauty and durability.</p>
+          <p className='text-porc-db text-[20px] text-center'> Elevate your home with ceramics that <span className='text-white'> blend beauty and durability</span></p>
           <ThreeDBtn text={'Contact Us Now'} buttonColors={''} spanColors={''}/>
         </div>
 

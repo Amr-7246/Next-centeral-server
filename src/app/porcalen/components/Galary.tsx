@@ -41,7 +41,7 @@ const Galary = ({image,porcelainProducts, title, cardS, right, PStyle, cta = " B
       <div className={` ${finallPStyles} text-[20px]  w-[50%] text-center `}>
         <div className="relative flex flex-col gap-6 z-10">
           {/* Title */}
-          <h2 className="text-[22px] pl-3 border-l-4 border-black md:text-3xl font-bold text-blue-900 flex items-center gap-3">
+          <h2 className=" font-chela text-[22px] pl-3 border-l-4 border-black md:text-3xl font-bold text-blue-900 flex items-center gap-3">
             {title}
           </h2>
 
@@ -122,6 +122,19 @@ const porcelainProducts = [
     image: porcalenProject.img_3,
   },
   {
+    title: "Handcrafted Ceramic Vases",
+    description: "Elegant, artisanal vases designed to add warmth and sophistication to modern interiors.",
+    details: {
+      color: "Earthy Tones / Custom Glaze",
+      size: "Small / Medium / Large",
+      finish: "Matte / Semi-Gloss",
+      material: "Stoneware Ceramic",
+    },
+    price: "$45 - $120",
+    cta: "Shop Now",
+    image: porcalenProject.img_4,
+  },
+  {
     title: "Custom Ceramic Solutions",
     description: "Made-to-order ceramic tiles and designs tailored to architects, designers, and project-specific needs.",
     details: {
@@ -132,7 +145,7 @@ const porcelainProducts = [
     },
     price: "Contact for Quote",
     cta: "Request Custom Design",
-    image: porcalenProject.porcalen_2,
+    image: porcalenProject.porcalen_1,
   },
 ];
 
@@ -140,9 +153,10 @@ const porcelainProducts = [
 const FinalGalary = () => {
   return(
       <section className="w-full py-20 bg-porc-lb flex flex-col items-center gap-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-black">
-        Explore Our Ceramic Collections
-      </h1>
+        <div className="flex justify-between w-[90%]">
+          <h2 className="text-[25px] border-b-2 border-black font-black text-black">  Bring Warmth Into Your Home</h2>
+          <p className="text-[20px]  border-b-2 border-sky-400 font-bold text-sky-400"> A curated selection of elegant pieces blending tradition and modern design</p>
+        </div>
 
       <div className="flex flex-col w-[90%] lg:w-[80%]">
         {porcelainProducts.map((area, idx) => (

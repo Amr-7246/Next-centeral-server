@@ -25,10 +25,14 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Brand / Logo + Description */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold text-porc-b">Ogilvie Law</h2>
+          {/*//& Logo */}
+            <div className="font-bitcount py-3 flex text-porc-b font-bold text-[25px] items-center gap-3">
+              <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
+              Ceramora
+            </div>
           <p className="text-sm text-white/80 leading-relaxed max-w-[400px]">
-            Trusted advisors with proven experience in corporate, family, and
-            criminal law. Your success is our definition of justice.
+            Where artistry meets craftsmanship. Each piece is thoughtfully designed to 
+            transform simple moments into timeless experiences.
           </p>
         </div>
 

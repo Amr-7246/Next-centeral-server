@@ -17,19 +17,19 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative flex-center overflow-hidden bg-black/70 w-[100%] h-[100%] ">
-        <div className="w-[80%] h-[80%] flex flex-col gap-4 justify-center">
+        <div className="relative z-5 w-[80%] h-[80%] flex flex-col gap-4 justify-center">
           <span
             style={{ color: "transparent", WebkitTextStroke: "2px #1D8ED9" }}
             className="text-[50px]"
           >
-            Showcasing
+            Crafted with 
             <span
               style={{ color: "white", WebkitTextStroke: "1px white" }}
               className="text-white mx-3"
             >
-              Excellence,
+              Passion, Designed 
             </span>
-            Building Trust
+            for Living
           </span>
           <p className="text-lg md:text-xl text-lf-dw max-w-[650px]">
             {porcalenProject.porcalenTextContent.home.hero.subtext}
@@ -40,14 +40,19 @@ const Hero = () => {
           </div>
         </div>
 
-        {/*//& Frame Decorations */}
+        {/*//& Luxury Decorations styles */}
+          {/*//& Logo */}
+            <div className="font-bitcount z-10 py-3 absolute top-5 left-15 flex text-porc-b font-bold text-[25px] flex-center gap-3">
+              <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
+              Ceramora
+            </div>
           {/*//~ Navigation */}
           <nav className="absolute top-10 right-10 flex gap-8 text-lf-w font-medium text-md ">
             {porcalenProject.porcalenTextContent.navBar.options.map((item,idx) => (
               <Link
                 key={idx}
                 href={item.href}
-                className={` hover:text-porc-b transition-colors duration-700`}
+                className={` ${idx == 0 ? "text-porc-b" : "" } hover:text-porc-b transition-colors duration-700`}
               >
                 {item.name}
               </Link>
@@ -76,51 +81,3 @@ const Hero = () => {
 
 export default Hero;
 
-
-          // {/*//~ Bottom Right Corner Box */}
-          // <span className="w-[80px] absolute h-[150px] border border-t-0 border-l-0 border-white right-[30px] bottom-[80px]" />
-
-          // {/*//~ Small Motto */}
-          // <span className="text-[10px] text-porc-b font-bold absolute w-fit right-[115px] bottom-[72px]">
-          //   YOUR BEST CHOICE
-          // </span>
-
-          // {/*//~ Pulsing Dots */}
-          // <div className="w-fit absolute h-fit right-[28px] bottom-[300px] flex-center gap-2 flex-col">
-          //   <span className="w-[10px] h-[10px] rounded-full bg-white animate-pulse" />
-          //   <span className="w-[10px] h-[10px] rounded-full bg-white animate-pulse" />
-          //   <span className="w-[10px] h-[10px] rounded-full bg-white animate-pulse" />
-          // </div>
-
-          // {/*//~ Top Left Corner Box */}
-          // <span className="w-[150px] absolute h-[80px] border border-b-0 border-r-0 border-white left-[30px] top-[30px]" />
-
-          // {/*//~ Social Media */}
-          // <div className="absolute bottom-[80px] left-[30px] flex gap-5 text-black text-xl">
-          //   <a href="#" className="hover:text-lf bg-lf-w rounded-full p-2 transition-colors">
-          //     <FaLinkedin />
-          //   </a>
-          //   <a href="#" className="hover:text-lf bg-lf-w rounded-full p-2 transition-colors">
-          //     <FaFacebookF />
-          //   </a>
-          //   <a href="#" className="hover:text-lf bg-lf-w rounded-full p-2 transition-colors">
-          //     <FaInstagram />
-          //   </a>
-          // </div>
-
-          // {/*//~ Left Vertical Line Accent */}
-          // <span className="absolute left-[15px] top-[100px] w-[2px] h-[200px] bg-porc-b opacity-70" />
-
-          // {/*//~ Right Vertical Line Accent */}
-          // <span className="absolute right-[15px] bottom-[170px] w-[2px] h-[180px] bg-porc-b opacity-70" />
-
-          // {/*//~ Top Horizontal Line Accent */}
-          // <span className="absolute top-[15px] left-[120px] w-[200px] h-[2px] bg-porc-b opacity-70" />
-
-          // {/*//~ Bottom Horizontal Line Accent */}
-          // <span className="absolute bottom-[65px] right-[120px] w-[250px] h-[2px] bg-porc-b opacity-70" />
-
-          // {/*//~ Decorative Text Vertical */}
-          // <span className="absolute rotate-90 text-[11px] tracking-[0.3em] font-bold text-lf-w -left-[55px] bottom-[175px]">
-          //   LEGAL EXPERTISE
-          // </span>

@@ -3,17 +3,18 @@ import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react
 import Image from 'next/image'
 import { Home } from '@/pub/assets/lowFirm'
 import { ThreeDBtn } from '@/components/Buttons'
+import { porcalenProject } from '@/pub/assets/porcalen'
 
 const ContactForm = () => {
   return (
     <div className=" w-full flex-center h-[80vh] p-8 bg-porc-lb text-porc-b py-[100px]">
-      <div className='relative w-[90%] rounded-2xl p-5'>
-        <div  className='absolute w-full h-full overflow-hidden inset-0 rounded-2xl '>
-          <Image src={Home.hero_3} alt={''} />
+      <div className='relative w-[90%] rounded-4xl p-10'>
+        <div className='absolute w-full h-full overflow-hidden inset-0 rounded-4xl '>
+          <Image className='bg-cover' src={porcalenProject.img_4} alt={''} />
         </div>
-        <span className='absolute inset-0  rounded-2xl bg-black/80 ' />
+        <span className='absolute inset-0  rounded-4xl bg-black/80 ' />
         {/* //& Form it self */}
-          <form className="space-y-4 bg-black w-[40%] absolute -top-35 right-20 px-5 py-[50px] rounded-xl z-5 "  >
+          <form className="space-y-4 bg-black w-[40%] absolute -top-35 right-20 px-5 py-[50px] rounded-xl z-10 "  >
             <div>
               <label className="block mb-1 text-sm font-medium">Full Name</label>
               <input

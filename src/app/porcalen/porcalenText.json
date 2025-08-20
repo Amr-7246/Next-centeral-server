@@ -1,7 +1,7 @@
 {
   "navBar": {
     "options": [
-      { "name": "Home", "href": "/lawFirm", "fake_href": "/lawFirm" },
+      { "name": "Home", "href": "/porcalen", "fake_href": "/porcalen" },
       { "name": "Explor collections ", "href": "/lawFirm/PracticeArea", "fake_href": "/lawFirm/PracticeArea" },
       { "name": "about", "href": "/lawFirm/AboutUs", "fake_href": "/lawFirm/AboutUs" },
       { "name": "contact us", "href": "/lawFirm/ContactUs", "fake_href": "/lawFirm/ContactUs" }
@@ -13,8 +13,8 @@
   },
   "home": {
 "hero": {
-  "headline": "Showcasing Excellence, Building Trust",
-  "subtext": "Discover our curated portfolio that reflects professionalism, precision, and dedication. . . ",
+  "headline": "Crafted with Passion, Designed for Living",
+  "subtext": "Explore our unique ceramic collection, where timeless artistry meets modern elegance. Every piece is handmade to bring warmth, beauty, and durability into your space.",
   "cta": "Explore Portfolio"
 },
     "practiceAreas": {

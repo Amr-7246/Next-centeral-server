@@ -9,6 +9,19 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        dosis: ['"Dosis"', 'sans-serif'],
+        libre: ['"Libre Baskerville"', 'serif'],
+        orbitron: ['"Orbitron"', 'sans-serif'],
+        rowdies: ['"Rowdies"', 'cursive'],
+        shafarik: ['"Shafarik"', 'serif'],
+        yuji: ['"Yuji Mai"', 'serif'],
+        bitcount: ['"Bitcount Grid Single"', 'sans-serif'],
+        mozilla: ['"Mozilla Headline"', 'sans-serif'],
+        winky: ['"Winky Rough"', 'cursive'],
+        chela: ['"Chela One"', 'cursive'],
+        ubuntu: ['"Ubuntu"', 'sans-serif'],
+      },
       colors: {
         bg: {
           DEFAULT: '#ffddc6',
