@@ -70,13 +70,23 @@ module.exports = {
         gradientTo: {
           DEFAULT: '#cdc0ff',
         },
-        //& Low Firm colors . . 
+        //& Low Firm colors . .
         'lf-db': '#000349',
         'lf-b': '#0C1B63',
         'lf-w': '#FFFFFF',
         'lf-dw': '#D9D9E2',
         'lf-dy': '#E6A61E',
         'lf-g': '#252B3D',
+        //& porcalen colors . .
+        'porc-w': '#F8FAFC',      
+        'porc-dw': '#D9D9E2',   
+        'porc-lb': '#d9eeff',   
+        'porc-b': '#60A5FA',   
+        'porc-db': '#3B82F6',
+        'porc-s': '#94A3B8', 
+        'porc-ds': '#64748B',
+        'porc-g': '#34D399',    
+        'porc-dg': '#10B981',
       },
     },
   },

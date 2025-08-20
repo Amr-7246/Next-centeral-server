@@ -1,0 +1,64 @@
+{
+  "navBar": {
+    "options": [
+      { "name": "Home", "href": "/lawFirm", "fake_href": "/lawFirm" },
+      { "name": "Explor collections ", "href": "/lawFirm/PracticeArea", "fake_href": "/lawFirm/PracticeArea" },
+      { "name": "about", "href": "/lawFirm/AboutUs", "fake_href": "/lawFirm/AboutUs" },
+      { "name": "contact us", "href": "/lawFirm/ContactUs", "fake_href": "/lawFirm/ContactUs" }
+    ],
+    "login": "log in",
+    "signin": "sign in",
+    "signup": "sign up",
+    "signout": "sign out"
+  },
+  "home": {
+"hero": {
+  "headline": "Showcasing Excellence, Building Trust",
+  "subtext": "Discover our curated portfolio that reflects professionalism, precision, and dedication. . . ",
+  "cta": "Explore Portfolio"
+},
+    "practiceAreas": {
+      "title": "Our Practice Areas",
+      "areas": [
+        {
+          "icon": "scale",
+          "title": "Corporate Law",
+          "text": "Comprehensive support for businesses, contracts, and compliance."
+        },
+        {
+          "icon": "family",
+          "title": "Family Law",
+          "text": "Guidance on family matters including custody, divorce, and mediation."
+        },
+        {
+          "icon": "shield",
+          "title": "Criminal Defense",
+          "text": "Strong representation to protect your rights and reputation."
+        }
+      ]
+    },
+    "aboutPreview": {
+      "title": "Decades of Legal Excellence",
+      "text": "Our firm has served clients across industries with integrity, professionalism, and dedication to justice.",
+      "cta": "Learn More About Us"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "reviews": [
+        {
+          "quote": "The team guided me through a complex case with professionalism and care.",
+          "name": "Sarah Johnson"
+        },
+        {
+          "quote": "Exceptional service. I felt protected and informed every step of the way.",
+          "name": "Michael Lee"
+        }
+      ]
+    },
+    "ctaBanner": {
+      "headline": "Ready to Discuss Your Case?",
+      "subtext": "Contact us today for a confidential consultation with our expert attorneys.",
+      "cta": "Schedule Now"
+    }
+  }
+}
