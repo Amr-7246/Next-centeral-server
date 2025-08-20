@@ -83,7 +83,7 @@ const Galary = ({image,porcelainProducts, title, cardS, right, PStyle, cta = " B
 
 const porcelainProducts = [
   {
-    title: "Floor & Wall Tiles",
+    title: "Anty Onix",
     description: "Durable ceramic tiles designed for modern interiors and exteriors, combining strength with elegant patterns.",
     details: {
       color: "Marble White",
@@ -96,7 +96,7 @@ const porcelainProducts = [
     image: porcalenProject.img_1,
   },
   {
-    title: "Kitchen & Bathroom Tiles",
+    title: "Milan",
     description: "Moisture-resistant ceramics crafted to transform kitchens and bathrooms into stylish, functional spaces.",
     details: {
       color: "Ivory Beige",
@@ -109,7 +109,7 @@ const porcelainProducts = [
     image: porcalenProject.img_2,
   },
   {
-    title: "Decorative Ceramic Pieces",
+    title: "ASIS I",
     description: "Accent ceramics with unique patterns and textures, perfect for feature walls and luxury interiors.",
     details: {
       color: "Ocean Blue Pattern",
@@ -122,7 +122,7 @@ const porcelainProducts = [
     image: porcalenProject.img_3,
   },
   {
-    title: "Handcrafted Ceramic Vases",
+    title: "ASIS II",
     description: "Elegant, artisanal vases designed to add warmth and sophistication to modern interiors.",
     details: {
       color: "Earthy Tones / Custom Glaze",
