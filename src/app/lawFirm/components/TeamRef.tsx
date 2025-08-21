@@ -2,6 +2,7 @@ import React from "react";
 import { Scale, ShieldCheck, Briefcase } from "lucide-react";
 import { about } from "@/pub/assets/lowFirm";
 import Image from "next/image";
+import { ThreeDBtn } from "@/components/Buttons";
 
 const TeamRef = () => {
   const team = [
@@ -58,7 +59,7 @@ const TeamRef = () => {
         {team.map((member) => (
           <div
             key={member.id}
-            className="relative flex flex-col items-center text-center space-y-4 bg-black/50 rounded-xl pb-6 shadow-sm"
+            className="relative flex flex-col items-center text-center space-y-4 bg-black rounded-xl pb-6 shadow-sm"
           >
             <div className="w-full h-[300px] overflow-hidden rounded-t-lg">
               <Image
@@ -67,17 +68,24 @@ const TeamRef = () => {
                 className="object-cover "
               />
             </div>
-            <h3 className="text-lg font-semibold text-[#000349]">{member.name}</h3>
-            <p className="text-sm font-medium text-[#0C1B63]">{member.role}</p>
-            <p className="text-sm text-[#252B3D] px-5">{member.bio}</p>
-            <div className="flex space-x-3">{member.icons}</div>
-
+            <h3 className="text-lg font-semibold text-lf-dw">{member.name}</h3>
+            <p className="w-full text-sm font-medium text-lf-w px-6 flex justify-between" >
+              <div className="flex text-sm space-x-3">{member.icons}</div>
+              {member.role}
+            </p>
+            <p className="text-sm text-amber-200 px-5 ">
+              {member.bio}
+            </p>
+            <div className="relative z-5">
+              <ThreeDBtn text={"Read More"} buttonColors={"bg-lf-dy text-white"} spanColors={"bg-white"} />
+            </div>
             {/* Decorative corners */}
-            <span className="w-[120px] rounded-tl-2xl absolute h-[60px] border border-b-0 border-r-0 border-[#E6A61E] -left-3 -top-5 " />
-            <span className="w-[60px] rounded-br-2xl absolute h-[100px] border border-t-0 border-l-0 border-[#000349] -right-3 -bottom-3" />
+            <span className="w-[120px] rounded-tl-2xl absolute h-[60px] border-2 border-b-0 border-r-0 border-[#E6A61E] -left-3 -top-5 " />
+            <span className="w-[60px] rounded-br-2xl absolute h-[100px] border-2 border-t-0 border-l-0 border-black -right-3 -bottom-3" />
           </div>
         ))}
       </div>
+        <h2 className="text-[25px] text-black border-l-4 border-black pl-3 ">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy">our team</span></h2>
     </div>
   );
 };

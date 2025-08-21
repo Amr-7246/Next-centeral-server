@@ -1,5 +1,6 @@
+import { ThreeDBtn } from '@/components/Buttons';
 import { Home } from '@/pub/assets/lowFirm';
-import { Quote, Star, Award } from 'lucide-react';
+import { Quote, Star, Award, Palette, Users } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
 
@@ -52,15 +53,33 @@ const ClientsSays = () => {
               className="absolute z-1 inset-0 w-full h-full object-cover "
             />
             <div className='relative flex items-start justify-start p-5 flex-col gap-3 bg-black/90 w-full h-full z-2 '>
-              <h2 className="z-2 text-center text-amber-200 text-[27px] w-[90%] mx-auto">
+              <h2 className="z-2 pt-5 text-center text-amber-200 text-[27px] w-[90%] mx-auto">
                 Our story is built on one principle . . 
                 When our clients succeed, so do we.  
               </h2>
             </div>
           </div>
-          <div className="absolute bottom-10 left-15 z-5 text-center text-amber-300 text-[18px] w-[30%] ">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <button className="underline text-center text-white ">Learn More</button>
+          <div className="absolute bottom-5 left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
+            {/* Years of Expertise */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50  first:border-none">
+              <Award className="w-6 h-6 text-porc-db mb-2" />
+              <p className="text-sm font-bold">10+</p>
+              <span className="text-[12px]">Years of Expertise</span>
+            </div>
+
+            {/* Happy Clients */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 ">
+              <Users className="w-6 h-6 text-porc-db mb-2" />
+              <p className="text-sm font-bold">5,000+</p>
+              <span className="text-[12px]">Happy Clients</span>
+            </div>
+
+            {/* Unique Designs */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 ">
+              <Palette className="w-6 h-6 text-porc-db mb-2" />
+              <p className="text-sm font-bold">100+</p>
+              <span className="text-[12px]">Unique Designs</span>
+            </div>
           </div>
           {/*//& Testimonials Grid */}
           <div className="absolute -bottom-[100%] -right-[20%] w-[85%] z-5">
@@ -91,8 +110,6 @@ const ClientsSays = () => {
                   <span className="w-[150px] rounded-tl-2xl absolute h-[80px] border border-b-0 border-r-0 border-white left-0 top-0" />
                   <span className="w-[80px] rounded-br-2xl absolute h-[150px] border border-t-0 border-l-0 border-lf-dy right-0 bottom-0" />
 
-                  {/* Subtle background flair */}
-                  <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-lf-dy/10 rounded-full blur-2xl z-0" />
                 </div>
               ))}
             </div>
@@ -106,7 +123,11 @@ const ClientsSays = () => {
           </div> */}
 
         </div>
-
+      {/*//& Markting Hook */}
+        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[20%] left-[3%] '> 
+          <p className='text-white text-[20px] text-center'>Protecting your rights with <span className='text-lf-dy'>strength and precision</span></p>
+          <ThreeDBtn text={'Contact Us Now'} buttonColors={''} spanColors={''}/>
+        </div>
     </section>
   )
 }

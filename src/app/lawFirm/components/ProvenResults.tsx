@@ -64,7 +64,7 @@ const caseStudies = [
 const ProvenResults = () => {
   return (
     <section className="w-full py-20 bg-lf-g flex flex-col items-center gap-12">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-10">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-10 w-[80%] flex justify-start border-l-5 border-amber-200 pl-3 ">
         Proven Results
       </h1>
 

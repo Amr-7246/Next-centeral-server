@@ -2,6 +2,8 @@ import { Home } from '@/pub/assets/lowFirm'
 import Image from 'next/image'
 import React from 'react'
 import { ArrowRight, ArrowLeft } from "lucide-react";
+import { IconicBtn } from '@/components/Buttons';
+import { CiViewList } from 'react-icons/ci';
 
 const PracticalRef = () => {
   const finallCardStyles = true
@@ -9,18 +11,18 @@ const PracticalRef = () => {
     : "absolute top-0 -left-5"
 
   const finallPStyles = true
-    ? "absolute top-10 -left-5 text-amber-200"
-    : "absolute top-10 -right-5 text-lf-w"
+    ? "absolute top-10 -left-0 text-amber-200"
+    : "absolute top-10 -right-0 text-lf-w"
 
   return (
     <section className="bg-lf-g py-20 px-6 relative overflow-hidden">
       {/* Section Title */}
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold text-white tracking-wide">
+      <div className="w-full flex justify-between items-center pb-3 mb-16 border-b border-white">
+        <h2 className="text-[18px] md:text-[22px] font-bold text-white tracking-wide">
           Our <span className="text-lf-dy">Practice Areas</span>
         </h2>
-        <p className="text-lg md:text-xl text-lf-dw mt-4 max-w-2xl mx-auto">
-          Precision. Dedication. Results. Discover the expertise that defines our legal practice.
+        <p className="text-[15px] md:text-[18px] text-lf-dw ">
+          Precision. Dedication. Results. Discover the expertise that defines our legal practice
         </p>
       </div>
 
@@ -28,7 +30,7 @@ const PracticalRef = () => {
       <div className="relative h-[300px] flex justify-center items-center">
         {/* Center Dots & Line */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 z-20">
-          <div className="w-6 h-6 bg-white rounded-full border-2 border-lf-dy shadow-lg" />
+          <div className="w-6 h-6 bg-white rounded-full shadow-lg" />
         </div>
         <div className="absolute h-full left-1/2 top-0 -translate-x-1/2 z-10">
           <div className="w-2 h-full bg-lf-dw/40 rounded-full shadow-lg" />
@@ -82,14 +84,14 @@ const PracticalRef = () => {
         </div>
 
         {/* Description Panel */}
-        <div className={`${finallPStyles} text-[18px] lg:text-[20px] w-[50%] text-center px-6`}>
-          From residential acquisitions to large-scale industrial developments,
-          our real estate team delivers counsel on zoning, construction, financing,
-          and all stages of property transactions.
+        <div className={`${finallPStyles} flex flex-col text-[18px] lg:text-[20px] w-[50%] text-center px-6`}>
+          <p className="">
+            <span className="text-white">From residential acquisitions </span>to large-scale industrial developments,
+            our real estate team delivers counsel on zoning, construction, financing,
+            and <span className="text-white" >all stages of property transactions.</span>
+          </p>
           <br />
-          <button className="underline text-lf-dy cursor-pointer mt-3 transition-colors ">
-            Learn more
-          </button>
+          <IconicBtn text={"Learn More"} icon={<CiViewList />} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black mx-auto '} />
         </div>
       </div>
 

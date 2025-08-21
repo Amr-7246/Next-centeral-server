@@ -21,6 +21,7 @@ module.exports = {
         winky: ['"Winky Rough"', 'cursive'],
         chela: ['"Chela One"', 'cursive'],
         ubuntu: ['"Ubuntu"', 'sans-serif'],
+        Jost: ['"Jost"', 'sans-serif'],
       },
       colors: {
         bg: {

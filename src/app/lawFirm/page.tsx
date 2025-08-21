@@ -8,45 +8,37 @@ import PracticalRef from './components/PracticalRef'
 import ClientsSays from './components/ClientsSays'
 import TeamRef from './components/TeamRef'
 import ContactRef from './components/ContactRef'
+import Overveiw2 from './components/Overveiw2'
 
 const page = () => {
   return (
     <div>
       <div className="relative">
         <Hero/>
-        <Topper 
+        <Topper
         className={''}
         direction = {"bottom"}
-        shapeColor = {"#D9D9E2"}
-        circleColor ={ "#D9D9E2"}
-        iconColor = {"#252B3D"}
+        shapeColor = {"#000349"}
+        circleColor ={ "#000349"}
+        iconColor = {"#ffff"}
         />
       </div>
       <div className="relative">
-        <Topper 
+        <Topper
         className={''}
         direction = {"bottom"}
         shapeColor = {"#252B3D"}
         circleColor ={ "#252B3D"}
         iconColor = {"#ffff"}
         />
-        <Overveiw/>
+        <Overveiw2/>
       </div>
       <PracticalRef/>
       <ProvenResults/>
       <ClientsSays/>
       <TeamRef/>
       <ContactRef/>
-      <div className="relative">
-        <Topper 
-        className={''}
-        direction = {"top"}
-        shapeColor = {"#252B3D"}
-        circleColor ={ "#252B3D"}
-        iconColor = {"#000000"}
-        />
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
   )
 }

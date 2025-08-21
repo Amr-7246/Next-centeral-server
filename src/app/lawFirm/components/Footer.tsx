@@ -3,7 +3,8 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaE
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#000349] text-white pt-[150px] pb-6 md:px-16 ">
+    <footer className=" relative bg-[#000349] text-white pt-[150px] pb-6 md:px-16 ">
+      <p className="absolute tracking-[40px] text-center left-0 bottom-0 h-[220px] overflow-hidden text-[200px] text-black/50 font-black " >Firm Name</p>
       {/* 🔹 Decorative Absolute Boxes */}
       <div className="absolute top-[-5%] right-[10%] bg-lf-dw w-[30%] h-[140px] z-5 rounded-xl flex items-center justify-center">
         {/* Social Media inside Right Box */}
@@ -48,7 +49,7 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Brand / Logo + Description */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold text-[#E6A61E]">Ogilvie Law</h2>
+          <h2 className="text-2xl font-bold text-[#E6A61E]">firm Law</h2>
           <p className="text-sm text-white/80 leading-relaxed max-w-[400px]">
             Trusted advisors with proven experience in corporate, family, and
             criminal law. Your success is our definition of justice.
@@ -96,7 +97,7 @@ const Footer = () => {
 
       {/* 🔹 Bottom Section */}
       <div className="relative z-10 mt-10 border-t border-white/20 pt-6 text-center text-sm text-white/60">
-        © {new Date().getFullYear()} Ogilvie Law. All rights reserved.
+        © {new Date().getFullYear()} firm name Law. All rights reserved.
       </div>
     </footer>
   );

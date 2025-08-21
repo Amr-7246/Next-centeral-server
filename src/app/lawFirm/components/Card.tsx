@@ -2,6 +2,8 @@
 
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { IconicBtn } from "@/components/Buttons";
+import { CiViewList } from "react-icons/ci";
 
 interface CardProps {
   title: string;
@@ -31,10 +33,11 @@ const Card: React.FC<CardProps> = ({ title, description, image, cta = "Learn Mor
           {description}
         </p>
 
-        {cta && (
-          <button className="mt-4 cursor-pointer w-fit px-6 py-3 rounded-xl text-white underline hover:border-white border border-transparent font-semibold text-lg  transition-all">
-            {cta}
-          </button>
+        {cta && (         
+          <IconicBtn text={"Learn More"} icon={<CiViewList />} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black mx-auto '} />
+          // <button className="mt-4 cursor-pointer w-fit px-6 py-3 rounded-xl text-white underline hover:border-white border border-transparent font-semibold text-lg  transition-all">
+          //   {cta}
+          // </button>
         )}
       </div>
 
