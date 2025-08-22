@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { Palette, Ruler, Sparkles, Gem, ShoppingCart } from "lucide-react";
 import { ThreeDBtn } from '@/components/Buttons';
+import { Dots, Lines } from '@/graphics/LayoutShaps';
 
 interface props {
   image: string | StaticImageData,
@@ -28,14 +29,19 @@ const Galary = ({image,porcelainProducts, title, cardS, right, PStyle, cta = " B
       </div>
       {/*//& card */}
       <div className={`${finallCardStyles} shadow-2xl shadow-black/50 rounded-4xl w-[50%] h-[330px]`}>
-        <div className="relative w-[95%] h-full lg:w-full bg-black/10 rounded-4xl shadow-xl overflow-hidden flex flex-col justify-center p-10 mx-auto">
+        <div className="z-1 relative w-[95%] h-full lg:w-full bg-black/10 rounded-4xl shadow-xl overflow-hidden flex flex-col justify-center p-10 mx-auto">
           <Image
             src={image}
             alt={title}
             fill
             className="absolute inset-0 object-cover "
           />
-      </div>
+        </div>
+        {right? 
+          <Lines lineColor={'bg-sky-400/30'} shapS={'w-fit h-[400px] -bottom-[60%] rotate-35 -right-[0%] '} linesNum={10}  />
+        :
+          <Dots dotColor={'bg-sky-400/30'} shapS={'w-[400px] -bottom-[30%] -left-[20%] '} DotsNum={84} />
+        }
       </div>
       {/*//& pref */}
       <div className={` ${finallPStyles} text-[20px]  w-[50%] text-center `}>
@@ -70,8 +76,8 @@ const Galary = ({image,porcelainProducts, title, cardS, right, PStyle, cta = " B
 
           {/* Price + CTA */}
           <div className="flex items-center justify-between gap-4 mt-4">
-            <span className="text-xl font-semibold text-porc-dg">{porcelainProducts.price}</span>
-            <ThreeDBtn text={cta} buttonColors={'bg-porc-dg text-black text-[18px]'} spanColors={'bg-black'} icon={ <ShoppingCart/> }/>
+            <span className="text-xl font-semibold text-porc-db">{porcelainProducts.price}</span>
+            <ThreeDBtn text={cta} buttonColors={'bg-porc-db text-black text-[18px]'} spanColors={'bg-black'} icon={ <ShoppingCart/> }/>
           </div>
         </div>
       </div>
