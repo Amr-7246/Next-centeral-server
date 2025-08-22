@@ -44,7 +44,7 @@ const Hero = () => {
           {/*//& Logo */}
             <div className="font-bitcount z-10 py-3 absolute top-5 left-15 flex text-porc-b font-bold text-[25px] flex-center gap-3">
               <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
-              Ceramora
+              Ceracoma
             </div>
           {/*//~ Navigation */}
           <nav className="absolute top-10 right-10 flex gap-8 text-lf-w font-medium text-md ">

@@ -4,6 +4,7 @@ import React from 'react'
 import { Palette, Ruler, Sparkles, Gem, ShoppingCart } from "lucide-react";
 import { ThreeDBtn } from '@/components/Buttons';
 import { Dots, Lines } from '@/graphics/LayoutShaps';
+import { TbListDetails } from "react-icons/tb";
 
 interface props {
   image: string | StaticImageData,
@@ -55,29 +56,29 @@ const Galary = ({image,porcelainProducts, title, cardS, right, PStyle, cta = " B
           <p className="text-black text-lg leading-relaxed">{porcelainProducts.description}</p>
 
           {/* Details Section */}
-          <div className="grid grid-cols-2 gap-1 text-sm text-porc-dw bg-black/80 border-b-3 border-black p-3 rounded-t-lg">
-            <div className="flex items-center gap-2">
+          <div className="grid grid-cols-2 gap-3 text-sm text-black  p-3 rounded-t-lg">
+            <div className="flex items-center gap-2 p-2 bg-white shadow-lg shadow-black/30 rounded-lg ">
               <Palette className="w-5 h-5 text-porc-b" />
               <span>{porcelainProducts.details.color}</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 p-2 bg-white shadow-lg shadow-black/30 rounded-lg ">
               <Ruler className="w-5 h-5 text-porc-b" />
               <span>{porcelainProducts.details.size}</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 p-2 bg-white shadow-lg shadow-black/30 rounded-lg ">
               <Sparkles className="w-5 h-5 text-porc-b" />
               <span>{porcelainProducts.details.finish}</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 p-2 bg-white shadow-lg shadow-black/30 rounded-lg ">
               <Gem className="w-5 h-5 text-porc-b" />
               <span>{porcelainProducts.details.material}</span>
             </div>
           </div>
 
           {/* Price + CTA */}
-          <div className="flex items-center justify-between gap-4 mt-4">
-            <span className="text-xl font-semibold text-porc-db">{porcelainProducts.price}</span>
-            <ThreeDBtn text={cta} buttonColors={'bg-porc-db text-black text-[18px]'} spanColors={'bg-black'} icon={ <ShoppingCart/> }/>
+          <div className="flex-center items-center gap-4 mt-4">
+            {/* <span className="text-xl font-semibold text-porc-db">{porcelainProducts.price}</span> */}
+            <ThreeDBtn text={"view details"} buttonColors={'bg-porc-b text-black text-[18px]'} spanColors={'bg-black'} icon={ <TbListDetails/> }/>
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@ const porcelainProducts = [
     description: "Durable ceramic tiles designed for modern interiors and exteriors, combining strength with elegant patterns.",
     details: {
       color: "Marble White",
-      size: "60x60cm · 80x80cm · Custom Sizes",
+      size: "80x80cm · Custom Sizes",
       finish: "Matte / Gloss Options",
       material: "High-Quality Ceramic",
     },

@@ -5,17 +5,11 @@ import React from 'react'
 const ContactRef = () => {
   return (
     <div className='relative'>
-      {/* === Background Hero Image ===
-          Role: Gives strong visual identity and sets a professional tone.
-          Clients instantly feel trust and seriousness when landing here. */}
       <div className='absolute inset-0 -z-10'>
         <Image src={Home.hero_5} alt={'Professional legal consultation background'} className='w-full h-full object-cover' />
       </div>
       <span className='absolute bg-lf-db/80 inset-0 w-full h-full -z-1' />
 
-      {/* === Left-Aligned Hook Message ===
-          Role: Establishes authority & introduces the firm's core value.
-          Should feel like the "first handshake" – confident and trustworthy. */}
       <div className='w-full flex justify-start p-10 max-w-3xl'>
         <div>
           <h2 className='text-3xl font-bold text-white mb-3'>
@@ -30,9 +24,6 @@ const ContactRef = () => {
         </div>
       </div>
 
-      {/* === Right-Aligned Action Section ===
-          Role: Transition from trust → action.
-          This is where you invite the visitor to reach out, turning interest into a lead. */}
       <div className='w-full flex justify-end p-10 max-w-3xl ml-auto'>
         <div>
           <h2 className='text-3xl font-bold text-white mb-3'>

@@ -7,7 +7,11 @@ import { porcalenProject } from '@/pub/assets/porcalen'
 
 const ContactForm = () => {
   return (
-    <div className=" w-full flex-center h-[80vh] p-8 bg-porc-lb text-porc-b py-[100px]">
+    <div className="relative w-full flex-center h-[80vh] p-8 bg-porc-lb text-porc-b py-[100px]">
+      <div className="absolute top-[6%] left-[6%] flex flex-col gap-3">
+        <h2 className="border-l-5 border-black text-black text-[40px] pl-3">Get in touch</h2>
+        <p className=" text-sky-800 text-[18px] w-[70%] pl-5">Ready to transform Your space . . Contact our team of experts for personalized consultation and quotes</p>
+      </div>
       <div className='relative w-[90%] rounded-4xl p-10'>
         <div className='absolute w-full h-full overflow-hidden inset-0 rounded-4xl '>
           <Image className='bg-cover' src={porcalenProject.img_4} alt={''} />

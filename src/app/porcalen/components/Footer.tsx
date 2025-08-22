@@ -28,7 +28,7 @@ const Footer = () => {
           {/*//& Logo */}
             <div className="font-bitcount py-3 flex text-porc-b font-bold text-[25px] items-center gap-3">
               <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
-              Ceramora
+              Ceracoma
             </div>
           <p className="text-sm text-white/80 leading-relaxed max-w-[400px]">
             Where artistry meets craftsmanship. Each piece is thoughtfully designed to 
@@ -53,7 +53,7 @@ const Footer = () => {
 
       {/* 🔹 Bottom Section */}
       <div className="relative z-10 mt-10 border-t border-white/20 pt-6 text-center text-sm text-white/60">
-        © {new Date().getFullYear()} Ogilvie Law. All rights reserved.
+        © {new Date().getFullYear()} ceracoma. All rights reserved.
       </div>
     </footer>
   );

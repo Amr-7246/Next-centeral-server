@@ -5,6 +5,7 @@ import Topper from '@/components/Topper'
 import ClientsSays from './components/ClientsSays'
 import ContactForm from './components/ContactForm'
 import FinalGalary from './components/Galary'
+import CeracomaPref from './components/Pref'
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
         />
       </div>
       <FinalGalary/>
+      {/* <CeracomaPref/> */}
       <div className="relative">
         <Topper
         className={''}

@@ -6,7 +6,7 @@ export const ThreeDBtn = ({text,icon, buttonColors, spanColors}:{text:string|any
   const butDefualt = buttonColors == "" ? "shadow-black/50 bg-black text-white" : ""
   const spanDefualt = spanColors == "" ? "bg-white" : ""
   return (
-    <button className={`cursor-pointer flex gap-3 px-10 py-3 w-fit shadow-lg ${butDefualt} relative ${buttonColors}`}>
+    <button className={`cursor-pointer flex-center gap-3 px-8 py-2 w-fit shadow-lg ${butDefualt} relative ${buttonColors}`}>
       <span className={`absolute top-[6px] right-[6px] ${spanDefualt} w-full h-full -z-1  ${spanColors}`}  />   
       <span className='' >{icon}</span>
       {text}

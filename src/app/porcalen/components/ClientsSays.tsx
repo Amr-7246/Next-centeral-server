@@ -4,6 +4,7 @@ import { porcalenProject } from '@/pub/assets/porcalen';
 import { Quote, Star, Award, Palette, Users } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
+import CeracomaPref from './Pref';
 
 const testimonials = [
   {
@@ -32,10 +33,11 @@ const testimonials = [
 
 const ClientsSays = () => {
   return (
-    <section className="relative py-20 px-6 overflow-hidden bg-black/80 h-screen ">
+    <section className="relative py-20 px-6 overflow-hidden bg-black/80 h-[150vh] ">
+      <CeracomaPref />
       <Image src={porcalenProject.img_3} alt={"layerMask"} className="absolute -z-1 inset-0 w-full h-full object-cover " />
       {/*//& Logo */}
-        <div className="font-bitcount z-10 py-3 absolute top-5 left-15 flex text-porc-b font-bold text-[25px] flex-center gap-3">
+        <div className="font-bitcount z-10 py-3 absolute top-[5%] right-[5%] flex text-porc-b font-bold text-[25px] flex-center gap-3">
           <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-porc-b border-t-porc-dw border-b-black  " />
           Ceramora
         </div>
@@ -55,11 +57,11 @@ const ClientsSays = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-10 left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
+          <div className="absolute bottom-2 left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
             {/* Years of Expertise */}
             <div className="flex flex-col items-center text-center px-4 border-l-2 border-black first:border-none">
               <Award className="w-6 h-6 text-porc-db mb-2" />
-              <p className="text-sm font-bold">10+</p>
+              <p className="text-sm font-bold">40+</p>
               <span className="text-sm">Years of Expertise</span>
             </div>
 
@@ -113,9 +115,9 @@ const ClientsSays = () => {
         </div>
 
       {/*//& Markting Hook */}
-        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[20%] left-[3%] '> 
-          <p className='text-porc-db text-[20px] text-center'> Elevate your home with ceramics that <span className='text-white'> blend beauty and durability</span></p>
-          <ThreeDBtn text={'Contact Us Now'} buttonColors={''} spanColors={''}/>
+        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[10%] left-[3%] '> 
+          <p className='text-sky-300 text-[20px] text-center'> Elevate your home with ceramics that <span className='text-white'> blend beauty and durability</span></p>
+          <ThreeDBtn text={'Contact Us Now'} buttonColors={'bg-sky-300 text-black'} spanColors={'bg-white'}/>
         </div>
 
     </section>
