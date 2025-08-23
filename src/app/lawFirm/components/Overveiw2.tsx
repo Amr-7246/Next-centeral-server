@@ -24,7 +24,7 @@ const Overveiw2 = () => {
           <div className='w-[35%] text-white flex-center flex-col gap-3'>
             <h2 className="z-2 pb-2 w-full text-center text-[23px] text-amber-200 border-b-2 border-lf-dy ">
               Our definition of success is yours.
-            </h2>
+            </h2> 
             <p className='text-[18px] text-center' >When you choose our firm, you are not just hiring a law firm. You are securing a partner with a strategic outlook. A partner that is as personally invested in your end goal as you are. And that makes a world of difference to both of us.</p>
           </div>
 
