@@ -2,6 +2,8 @@ import React from 'react'
 import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react'
 import Image from 'next/image'
 import { Home } from '@/pub/assets/lowFirm'
+import { IconicBtn } from '@/components/Buttons'
+import { RiMailSendFill } from "react-icons/ri";
 
 const ContactForm = () => {
   return (
@@ -12,13 +14,13 @@ const ContactForm = () => {
         </div>
         <span className='absolute inset-0  rounded-2xl bg-black/80 ' />
         {/* //& Form it self */}
-          <form className="space-y-4 bg-gradient-to-bl from-black to-lf-db w-[40%] absolute -top-35  right-20 px-5 py-[50px] rounded-xl "  >
+          <form className="space-y-4 gap-5 bg-gradient-to-br from-black to-lf-db w-[40%] absolute -top-55  right-20 px-5 py-[100px] rounded-xl "  >
             <div>
               <label className="block mb-1 text-sm font-medium">Full Name</label>
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full border-b bg-black/30 border-[#D9D9E2]  p-3 focus:outline-none focus:ring-2 focus:ring-[#E6A61E]"
+                className="w-full border-b bg-white/10 backdrop-blur-lg border-[#D9D9E2]  p-3 focus:outline-none "
               />
             </div>
             <div>
@@ -26,7 +28,7 @@ const ContactForm = () => {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="w-full border-b bg-black/30 border-[#D9D9E2]  p-3 focus:outline-none focus:ring-2 focus:ring-[#E6A61E]"
+                className="w-full border-b bg-white/10 backdrop-blur-lg border-[#D9D9E2]  p-3 focus:outline-none "
               />
             </div>
             <div>
@@ -34,15 +36,10 @@ const ContactForm = () => {
               <textarea
                 rows={4}
                 placeholder="Write your message..."
-                className="w-full border-b bg-black/30 border-[#D9D9E2]  p-3 focus:outline-none focus:ring-2 focus:ring-[#E6A61E]"
+                className="w-full border-b bg-white/10 backdrop-blur-lg border-[#D9D9E2]  p-3 focus:outline-none "
               />
             </div>
-            <button
-              type="submit"
-              className="bg-[#E6A61E] text-white font-medium py-3 px-6  hover:bg-[#c98c18] transition"
-            >
-              Send Message
-            </button>
+            <IconicBtn text={"Send Message"} icon={<RiMailSendFill/>} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black'} />
           </form>
         {/*//& Physical Branches */}
           <div className='relative z-5' >
