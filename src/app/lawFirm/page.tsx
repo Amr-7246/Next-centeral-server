@@ -12,17 +12,17 @@ import Overveiw2 from './components/Overveiw2'
 
 const page = () => {
   return (
-    <div>
-      <div className="relative">
+    <div className="overflow-hidden ">
         <Hero/>
+      {/* <div className="relative">
         <Topper
         className={''}
         direction = {"bottom"}
-        shapeColor = {"#000349"}
-        circleColor ={ "#000349"}
+        shapeColor = {"#000"}
+        circleColor ={ "#000"}
         iconColor = {"#ffff"}
         />
-      </div>
+      </div> */}
       <div className="relative">
         <Topper
         className={''}

@@ -1,8 +1,9 @@
 import { ThreeDBtn } from '@/components/Buttons';
 import { Home } from '@/pub/assets/lowFirm';
-import { Quote, Star, Award, Palette, Users } from 'lucide-react';
+import { Quote, Star, Award, Palette, Users, Gavel, Scale, UserCheck } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
+import FirmPref from './FirmPref';
 
 const testimonials = [
   {
@@ -37,48 +38,56 @@ const testimonials = [
 
 const ClientsSays = () => {
   return (
-    <section className="relative py-20 px-6 overflow-hidden bg-lf-b/80 h-screen ">
+    <section className="relative py-20 px-6  h-[130vh]  ">
       <Image
         src={Home.hero_2}
         alt={"layerMask"}
         className="absolute -z-1 inset-0 w-full h-full object-cover "
       />
-      {/*//& fourest layer */}
+      {/*//& Logo */}
+        <div className="font-bitcount z-10 py-3 absolute top-[12%] right-[5%] flex text-amber-200 font-bold text-[25px] flex-center gap-3">
+          <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-lf-b border-t-lf-db border-b-lf-dy  " />
+          firm logo
+        </div>
+        <div className='relative z-5'>
+          <FirmPref />
+        </div>
+      <span className="absolute z-1 inset-0 w-full h-full bg-black/50 backdrop-blur-sm"/>
         <div className="relative flex-center flex-col w-full mt-[10vh] mb-[20vh]">
 
           <div className='relative overflow-hidden z-5 rounded-4xl w-[90%] h-[250px] flex  text-lf-dw '>
             <Image
-              src={Home.hero_3}
+              src={Home.hero}
               alt={"layerMask"}
               className="absolute z-1 inset-0 w-full h-full object-cover "
             />
-            <div className='relative flex items-start justify-start p-5 flex-col gap-3 bg-black/90 w-full h-full z-2 '>
+            <div className='relative flex items-start justify-start p-5 flex-col gap-3 bg-black/85 w-full h-full z-2 '>
               <h2 className="z-2 pt-5 text-center text-amber-200 text-[27px] w-[90%] mx-auto">
                 Our story is built on one principle . . 
                 When our clients succeed, so do we.  
               </h2>
             </div>
           </div>
-          <div className="absolute bottom-5 left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
-            {/* Years of Expertise */}
-            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50  first:border-none">
-              <Award className="w-6 h-6 text-porc-db mb-2" />
-              <p className="text-sm font-bold">10+</p>
-              <span className="text-[12px]">Years of Expertise</span>
+          <div className="absolute  bottom-2  left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
+            {/* Years of Practice */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 first:border-none">
+              <Scale className="w-6 h-6 text-amber-200 mb-2" />  {/* Justice Scales Icon */}
+              <p className="text-sm font-bold">15+</p>
+              <span className="text-[12px]">Years of Practice</span>
             </div>
 
-            {/* Happy Clients */}
-            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 ">
-              <Users className="w-6 h-6 text-porc-db mb-2" />
+            {/* Successful Cases */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50">
+              <Gavel className="w-6 h-6 text-amber-200 mb-2" />  {/* Gavel Icon */}
+              <p className="text-sm font-bold">2,500+</p>
+              <span className="text-[12px]">Successful Cases</span>
+            </div>
+
+            {/* Trusted Clients */}
+            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50">
+              <UserCheck className="w-6 h-6 text-amber-200 mb-2" />  {/* Verified Client Icon */}
               <p className="text-sm font-bold">5,000+</p>
-              <span className="text-[12px]">Happy Clients</span>
-            </div>
-
-            {/* Unique Designs */}
-            <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 ">
-              <Palette className="w-6 h-6 text-porc-db mb-2" />
-              <p className="text-sm font-bold">100+</p>
-              <span className="text-[12px]">Unique Designs</span>
+              <span className="text-[12px]">Trusted Clients</span>
             </div>
           </div>
           {/*//& Testimonials Grid */}
@@ -115,34 +124,14 @@ const ClientsSays = () => {
             </div>
           </div>
 
-          {/* Footer Note
-          <div className="absolute left-6 bottom-4 text-lf-dw">
-            <p className="text-sm md:text-base">
-              <Star /> Rated <span className="text-lf-dy font-bold">5/5</span> by over 200 satisfied clients.
-            </p>
-          </div> */}
-
         </div>
       {/*//& Markting Hook */}
-        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[20%] left-[3%] '> 
+        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[10%] left-[3%] '> 
           <p className='text-white text-[20px] text-center'>Protecting your rights with <span className='text-lf-dy'>strength and precision</span></p>
-          <ThreeDBtn text={'Contact Us Now'} buttonColors={''} spanColors={''}/>
+          <ThreeDBtn text={'Contact Us Now'} buttonColors={'bg-amber-200 text-black'} spanColors={'bg-white'}/>
         </div>
     </section>
   )
 }
 
 export default ClientsSays
-
-      // {/* Section Intro
-      // <div className="  text-center max-w-3xl mx-auto mb-16">
-      //   <h2 className="text-3xl md:text-5xl font-bold text-white tracking-wide">
-      //     Behind every <span className="text-lf-dy">success story</span> is trust
-      //   </h2>
-      //   <p className="text-lg md:text-xl text-lf-dw mt-4">
-      //     Our clients’ words are a reflection of our ethos: 
-      //     <span className="text-lf-dy"> unwavering commitment</span>, 
-      //     strategic insight, and genuine care.  
-      //     Here’s what they have to say:
-      //   </p>
-      // </div> */}

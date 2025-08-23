@@ -20,26 +20,23 @@ const Card: React.FC<CardProps> = ({ title, description, image, cta = "Learn Mor
         src={image}
         alt={title}
         fill
-        className="absolute inset-0 object-cover opacity-40 "
+        className="absolute inset-0 object-cover opacity-20 "
       />
 
       {/* Content */}
-      <div className="relative flex flex-col gap-6 z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white flex items-center gap-3">
+      <div className="relative flex flex-col gap-6 z-10 py-10">
+        <h2 className="text-[20px] text-center font-bold text-white flex items-center gap-3">
           {title}
         </h2>
 
-        <p className="text-lg md:text-xl text-amber-200 leading-relaxed max-w-2xl">
+        <p className="text-[15px] text-amber-200 leading-relaxed max-w-2xl">
           {description}
         </p>
 
-        {cta && (         
-          <IconicBtn text={"Learn More"} icon={<CiViewList />} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black mx-auto '} />
-          // <button className="mt-4 cursor-pointer w-fit px-6 py-3 rounded-xl text-white underline hover:border-white border border-transparent font-semibold text-lg  transition-all">
-          //   {cta}
-          // </button>
-        )}
       </div>
+      <div className="absolute bottom-5 left-5">
+        <IconicBtn text={"Learn More"} icon={<CiViewList />} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black mx-auto  '} />
+      </div>      
 
       {/* Decorative corner accents */}
 

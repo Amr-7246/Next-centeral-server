@@ -2,20 +2,20 @@
 import lowFirmTextContent from "@/app/lawFirm/lowFirmText.json"
 
 //& Home page importing
-import hero from "./hero.jpg"   
-import hero_2 from "./hero_2.jpg"   
-import hero_3 from "./hero_3.jpg"   
-import hero_4 from "./hero_4.jpg"   
-import hero_5 from "./hero_5.jpg"   
-import layerMask_1 from "./layerMask_1.jpg"   
-import layerMask_2 from "./layerMask_2.jpg"   
-import layerMask_3 from "./layerMask_3.jpg"   
-import layerMask_4 from "./layerMask_4.jpg"   
-import layerMask_5 from "./layerMask_5.jpg"   
-import overveiw_1 from "./overveiw_1.jpg" 
+import hero from "./hero.jpg"
+import hero_2 from "./hero_2.jpg"
+import hero_3 from "./hero_3.jpg"
+import hero_4 from "./hero_4.jpg"
+import hero_5 from "./hero_5.jpg"
+import layerMask_1 from "./layerMask_1.jpg"
+import layerMask_2 from "./layerMask_2.jpg"
+import layerMask_3 from "./layerMask_3.jpg"
+import layerMask_4 from "./layerMask_4.jpg"
+import layerMask_5 from "./layerMask_5.jpg"
+import overveiw_1 from "./overveiw_1.jpg"
 import overveiw_2 from "./overveiw_2.jpg"
 import overveiw_3 from "./overveiw_3.jpg"
-import office_1 from "./office_1.jpg"  
+import office_1 from "./office_1.jpg"
 
 //& Home page importing
 import power_preview_1 from "./hero_4.jpg"
@@ -30,6 +30,9 @@ import stroy_1 from "./about/story_1.jpg"
 import stroy_2 from "./about/story_2.jpg"
 import stroy_3 from "./about/story_3.jpg"
 
+//& svg bg importing
+import svg_bg_1 from "./svg/bg_1.svg"
+import svg_bg_2 from "./svg/bg_2.svg"
 
 export const Home = {
   lowFirmTextContent,
@@ -60,4 +63,8 @@ export const about = {
   stroy_1,
   stroy_2,
   stroy_3,
+}
+export const svg_bg = {
+  svg_bg_1,
+  svg_bg_2,
 }
