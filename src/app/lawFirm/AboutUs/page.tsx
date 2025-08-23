@@ -9,7 +9,7 @@ import Team from './components/Team'
 
 const page = () => {
   return (
-    <div>
+    <div  className="overflow-hidden ">
       <Hero/>
       <Story/>
       <Testimonials/>

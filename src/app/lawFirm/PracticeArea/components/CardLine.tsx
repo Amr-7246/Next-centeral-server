@@ -1,5 +1,7 @@
+import { IconicBtn } from '@/components/Buttons'
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 interface props {
   image: string | StaticImageData,
@@ -18,10 +20,10 @@ const CardLine = ({image, title, pref, cardS, right, PStyle, cta = " . . read Mo
     <div className='relative h-[300px] ' >
       {/*//& pining Dots */}
       <div className="absolute left-1/2 top-0 -translate-x-1/2 z-20">
-        <div className="w-6 h-6 bg-white rounded-full border-2 border-[#E6A61E] shadow-lg" />
+        <div className="w-5 h-5 bg-white rounded-full  shadow-lg" />
       </div>
       <div className="absolute h-full left-1/2 top-0 -translate-x-1/2 z-10">
-        <div className="w-2 h-full bg-lf-dw/50 border-1 border-[#E6A61E] shadow-lg" />
+        <div className="w-1 h-full bg-lf-dw/50 shadow-lg" />
       </div>
       {/*//& card */}
       <div className={`${finallCardStyles} w-[50%] h-[180px]`}>
@@ -31,12 +33,12 @@ const CardLine = ({image, title, pref, cardS, right, PStyle, cta = " . . read Mo
             src={image}
             alt={title}
             fill
-            className="absolute inset-0 object-cover opacity-40 "
+            className="absolute inset-0 object-cover opacity-20 "
           />
     
           {/* Content */}
-          <div className="relative flex flex-col gap-6 z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-white flex items-center gap-3 ">
+          <div className="relative flex-center gap-6 z-10">
+            <h2 className="text-3xl w-fit md:text-4xl font-bold text-white flex items-center gap-3 text-center ">
               {title}
             </h2>
           </div>
@@ -74,9 +76,11 @@ const CardLine = ({image, title, pref, cardS, right, PStyle, cta = " . . read Mo
         </div>
       </div>
       {/*//& pref */}
-      <div className={` ${finallPStyles} text-[20px]  w-[50%] text-center `}>
+      <div className={` ${finallPStyles} flex-center flex-col gap-3 text-[20px]  w-[50%] text-center `}>
         {pref} <br />
-        <button className={'underline text-lf-b cursor-pointer mx-2 '} >{ cta }</button>
+        <span >
+          <IconicBtn text={ cta } icon={<PiReadCvLogoFill/>} iconStyle={'bg-white text-black'} buttonColors={'bg-black text-white'} />
+        </span>
       </div>
 
     </div>

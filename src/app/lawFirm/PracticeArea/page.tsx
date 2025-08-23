@@ -8,7 +8,7 @@ import Quot from './components/Quot'
 
 const page = () => {
   return (
-    <div>
+    <div  className="overflow-hidden ">
       <div className="relative">
         <Hero/>
         <Topper

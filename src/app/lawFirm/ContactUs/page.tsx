@@ -6,7 +6,7 @@ import ContactForm from './components/ContactForm'
 
 const page = () => {
   return (
-    <div>
+    <div  className="overflow-hidden ">
       <div className="relative">
         <Hero/>
         <Topper 

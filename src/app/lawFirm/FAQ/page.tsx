@@ -8,7 +8,7 @@ import ContactForm from '../ContactUs/components/ContactForm'
 
 const page = () => {
   return (
-    <div>
+    <div  className="overflow-hidden ">
       <Hero/>
       <div className='bg-lf-w flex-center flex-col gap-3 h-[45vh] px-15 '>
         <h2 className='text-lf-db font-bold text-[30px] p-3 border-b border-lf-db '>Common Concerns Explained</h2>

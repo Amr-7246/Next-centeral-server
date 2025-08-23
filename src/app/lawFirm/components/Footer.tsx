@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="absolute top-[-5%] left-[10%] bg-white w-[30%] h-[140px] z-5 rounded-xl flex flex-col items-center justify-center text-[#000349] font-semibold">
+      <div className="absolute top-[-5%] left-[10%] bg-lf-dw w-[30%] h-[140px] z-5 rounded-xl flex flex-col items-center justify-center text-[#000349] font-semibold">
         {/* Contact Info inside Left Box */}
         <ul className="space-y-2 text-sm">
           <li className="flex items-center gap-2">
