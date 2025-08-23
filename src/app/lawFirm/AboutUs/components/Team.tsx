@@ -1,9 +1,10 @@
 import React from "react";
-import { Scale, ShieldCheck, Briefcase } from "lucide-react";
+import { Scale, ShieldCheck, Briefcase, ArrowLeft, ArrowRight } from "lucide-react";
 import { about } from "@/pub/assets/lowFirm";
 import Image from "next/image";
+import { ThreeDBtn } from "@/components/Buttons";
 
-const Team = () => {
+const TeamRef = () => {
   const team = [
     {
       id: 1,
@@ -41,7 +42,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full py-16 px-6 bg-white space-y-12">
+    <div className="w-full py-16 px-6 bg-lf-dw space-y-12">
       {/* Section Heading */}
       <div className="mb-[80px] flex flex-col md:flex-row justify-between items-center">
         <h2 className="text-[22px] font-bold text-[#000349] relative pb-2">
@@ -58,7 +59,7 @@ const Team = () => {
         {team.map((member) => (
           <div
             key={member.id}
-            className="relative flex flex-col items-center text-center space-y-4 bg-black/50 rounded-xl pb-6 shadow-sm"
+            className="relative flex flex-col items-center text-center space-y-4 bg-black rounded-xl pb-6 shadow-sm"
           >
             <div className="w-full h-[300px] overflow-hidden rounded-t-lg">
               <Image
@@ -67,19 +68,41 @@ const Team = () => {
                 className="object-cover "
               />
             </div>
-            <h3 className="text-lg font-semibold text-[#000349]">{member.name}</h3>
-            <p className="text-sm font-medium text-[#0C1B63]">{member.role}</p>
-            <p className="text-sm text-[#252B3D] px-5">{member.bio}</p>
-            <div className="flex space-x-3">{member.icons}</div>
-
+            <h3 className="text-lg font-semibold text-lf-dw">{member.name}</h3>
+            <p className="w-full text-sm font-medium text-lf-w px-6 flex justify-between" >
+              <div className="flex text-sm space-x-3">{member.icons}</div>
+              {member.role}
+            </p>
+            <p className="text-sm text-amber-200 px-5 ">
+              {member.bio}
+            </p>
+            <div className="relative z-5">
+              <ThreeDBtn text={"Read More"} buttonColors={"bg-lf-dy text-white"} spanColors={"bg-white"} />
+            </div>
             {/* Decorative corners */}
-            <span className="w-[120px] rounded-tl-2xl absolute h-[60px] border border-b-0 border-r-0 border-[#E6A61E] -left-3 -top-5 " />
-            <span className="w-[60px] rounded-br-2xl absolute h-[100px] border border-t-0 border-l-0 border-[#000349] -right-3 -bottom-3" />
+            <span className="w-[120px] rounded-tl-2xl absolute h-[60px] border-2 border-b-0 border-r-0 border-[#E6A61E] -left-3 -top-5 " />
+            <span className="w-[60px] rounded-br-2xl absolute h-[100px] border-2 border-t-0 border-l-0 border-black -right-3 -bottom-3" />
           </div>
         ))}
+      </div>
+      {/* Navigation */}
+      <div className="flex justify-center items-center gap-5 mt-16 py-2 bg-black/30 border border-black rounded-4xl w-[50%] mx-auto">
+        <button className="flex-center p-3 w-10 h-10 bg-black text-white rounded-full shadow-md  transition">
+          <ArrowLeft />
+        </button>
+        <div className="flex gap-3">
+          <span className="w-4 h-4 rounded-full bg-black" />
+          <span className="w-4 h-4 rounded-full bg-white" />
+          <span className="w-4 h-4 rounded-full bg-white" />
+          <span className="w-4 h-4 rounded-full bg-white" />
+          <span className="w-4 h-4 rounded-full bg-white" />
+        </div>
+        <button className="p-3 flex-center w-10 h-10 bg-black text-white rounded-full shadow-md  transition">
+          <ArrowRight/>
+        </button>
       </div>
     </div>
   );
 };
 
-export default Team;
+export default TeamRef ;

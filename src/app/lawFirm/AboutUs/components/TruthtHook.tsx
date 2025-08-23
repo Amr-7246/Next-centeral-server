@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Home } from '@/pub/assets/lowFirm'
+import { ThreeDBtn } from '@/components/Buttons'
 
 const TruthtHook = () => {
   return (
@@ -8,7 +9,7 @@ const TruthtHook = () => {
       {/* Left Image */}
       <div className='w-[35%] relative'>
         <Image src={Home.hero} alt={'trust'} />
-        <span className='shadow-lg shadow-lf-dw/20 w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 left-5' />
+        <span className='shadow-lg shadow-black/10 w-full h-full bg-black/50 absolute top-5 left-5' />
       </div>
 
       {/* Right Content */}
@@ -23,13 +24,9 @@ const TruthtHook = () => {
         </p>
 
         {/* CTAs */}
-        <div className='flex gap-4 mt-3'>
-          <button className='px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg shadow-md hover:bg-amber-600 transition'>
-            Schedule Consultation
-          </button>
-          <button className='px-6 py-3 border border-amber-500 text-amber-500 font-semibold rounded-lg hover:bg-amber-500 hover:text-white transition'>
-            Meet Our Team
-          </button>
+        <div className='relative z-5 flex gap-4 mt-3'>
+          <ThreeDBtn text={"Schedule Consultation"} buttonColors={'bg-amber-400 text-white hover:bg-amber-600 '} spanColors={'bg-white'}/>
+          <ThreeDBtn text={"Meet Our Team"} buttonColors={'border border-white text-white hover:bg-white hover:text-black'} spanColors={'bg-black'}/>
         </div>
       </div>
     </div>

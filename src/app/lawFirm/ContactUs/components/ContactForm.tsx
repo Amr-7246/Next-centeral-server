@@ -12,7 +12,7 @@ const ContactForm = () => {
         </div>
         <span className='absolute inset-0  rounded-2xl bg-black/80 ' />
         {/* //& Form it self */}
-          <form className="space-y-4 bg-lf-db w-[40%] absolute -top-35  right-20 px-5 py-[50px] rounded-xl "  >
+          <form className="space-y-4 bg-gradient-to-bl from-black to-lf-db w-[40%] absolute -top-35  right-20 px-5 py-[50px] rounded-xl "  >
             <div>
               <label className="block mb-1 text-sm font-medium">Full Name</label>
               <input

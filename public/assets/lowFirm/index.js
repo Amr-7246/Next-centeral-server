@@ -33,6 +33,8 @@ import stroy_3 from "./about/story_3.jpg"
 //& svg bg importing
 import svg_bg_1 from "./svg/bg_1.svg"
 import svg_bg_2 from "./svg/bg_2.svg"
+import svg_bg_3 from "./svg/bg_3.svg"
+import svg_bg_4 from "./svg/bg_4.svg"
 
 export const Home = {
   lowFirmTextContent,
@@ -67,4 +69,6 @@ export const about = {
 export const svg_bg = {
   svg_bg_1,
   svg_bg_2,
+  svg_bg_3,
+  svg_bg_4,
 }

@@ -8,7 +8,7 @@ const Story = () => {
       <div className='flex flex-row justify-between bg-lf-g'>
         <div className='w-[35%] relative'>
           <Image src={about.stroy_1} alt={'story'}/>
-          <span className='shadow-lg shadow-lf-dw/20 w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 left-5 ' />
+          <span className=' w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 left-5 ' />
         </div>
         <div className='w-[55%] p-5 flex  flex-col gap-3 '>
           <p className='text-[30px] rounded-bl-md text-amber-200 relative p-3 border border-t-0 border-r-0 border-lf-dy ' >Our Story 
@@ -25,14 +25,14 @@ const Story = () => {
         </div>
         <div className='w-[35%] relative'>
           <Image src={about.stroy_3} alt={'story'}/>
-          <span className='shadow-lg shadow-lf-dw/20 w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 right-5 ' />
+          <span className=' w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 right-5 ' />
         </div>
       </div>
 
       <div className='flex flex-row justify-between bg-lf-g'>
         <div className='w-[35%] relative'>
           <Image src={about.stroy_2} alt={'story'}/>
-          <span className='shadow-lg shadow-lf-dw/20 w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 left-5 ' />
+          <span className=' w-full h-full bg-black/50 backdrop-blur-[1px] absolute top-5 left-5 ' />
         </div>
         <div className='w-[55%] px-5 pt-[100px] flex  flex-col gap-3 '>
           <p className='text-[30px] rounded-bl-md text-amber-200 relative p-3 border border-t-0 border-r-0 border-lf-dy ' >Some of our Achievements
