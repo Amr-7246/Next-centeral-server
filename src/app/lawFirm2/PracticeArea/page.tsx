@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Topper from '@/components/Topper'
 import PowerPreview from './components/PowerPreview'
 import FirmStratigy from './components/FirmStratigy'
 import Quot from './components/Quot'
+import Hero from '../components/Hero/Hero'
 
 const page = () => {
   return (

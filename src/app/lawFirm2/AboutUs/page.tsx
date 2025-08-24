@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Topper from '@/components/Topper'
 import Story from './components/Story'
 import Testimonials from './components/Testimonials'
 import TruthtHook from './components/TruthtHook'
 import Team from './components/Team'
+import Hero from '../components/Hero/Hero'
 
 const page = () => {
   return (

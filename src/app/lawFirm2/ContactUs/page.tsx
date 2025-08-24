@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Topper from '@/components/Topper'
 import ContactForm from './components/ContactForm'
+import Hero from '../components/Hero/Hero'
 
 const page = () => {
   return (
