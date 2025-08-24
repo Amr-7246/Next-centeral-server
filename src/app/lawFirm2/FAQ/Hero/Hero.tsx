@@ -13,6 +13,7 @@ import { TbPointerQuestion } from "react-icons/tb";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import { FaTeamspeak } from "react-icons/fa";
 import FirmPref from './FirmPref'
+import Faq from '../Faq'
 
 const Hero = () => {
 
@@ -40,9 +41,9 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative">
+    <section className="relative ">
       {/*//& Animated background with Hero content */}
-        <div className='relative w-full h-[90vh]'>
+        <div className='relative w-full h-[100vh]'>
           <DarkVeil hueShift={15} noiseIntensity={0.2} scanlineIntensity={0} speed={0} scanlineFrequency={3} warpAmount={3} />
           {/*//& Horizontal blured NavBar & social icons */}
             <div className='flex flex-col gap-3 absolute top-8 right-8' >
@@ -72,32 +73,18 @@ const Hero = () => {
               </div>
             </div>
         </div>
+        <Nav/>
 
-      {/*//& Image background with the Firm pref */}
-        <div className='h-[90vh] w-full relative'>
+      {/*//& FAQ Section with dark overlay */}
+        <div className="relative w-full">
           <Image
-            src={Home2.hero_6}
+            src={Home2.hero}
             alt="layout"
             fill
             className="absolute inset-0 object-cover -z-5"
           />
           <span className='absolute w-full h-full inset-0 -z-4 bg-gradient-to-b from-black via-black/60 to-black/50'/>
-
-          {/*//& Feature Cards */}
-            <div className="absolute top-[-50px] left-1/2 transform -translate-x-1/2 w-[90%] grid grid-cols-4 gap-4 z-20">
-              {features.map((feature, index) => (
-                <div key={index} className=" relative backdrop-blur-md bg-white/10 p-6 rounded-lg border border-white/80 ">
-                  <div className="flex flex-col items-center text-center">
-                    <span className='absolute top-3 left-3 bg-black/50 rounded-full border-white border text-[12px] p-2'>
-                      {feature.icon}
-                    </span>
-                    <h3 className="mt-4 text-lf-dy font-semibold">{feature.head}</h3>
-                    <p className="mt-2 text-white/80 text-sm">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          <Nav/>
+          <Faq />
         </div>
 
       <FirmPref/>

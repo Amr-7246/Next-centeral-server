@@ -1,112 +1,146 @@
 import { svg_bg } from "@/pub/assets/lowFirm";
 import Image from "next/image";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaBalanceScale, FaGavel, FaHandshake } from "react-icons/fa";
+import { Scale } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className=" relative text-white pt-[150px] pb-6  md:px-16 ">
+    <footer className=" text-white pt-24 pb-6 min-h-screen relative">
       <Image
-          src={svg_bg.svg_bg_2}
-          alt="layout"
-          fill
-          className="absolute inset-0 object-cover -z-10"
-        />
-      <p className="absolute text-center -right-[185px] bottom-[151px] overflow-hidden text-[83px] -rotate-90 text-gray-500/30 font-black " >Firm Name</p>
-      {/* 🔹 Decorative Absolute Boxes */}
-      <div className="absolute top-[-5%] right-[10%] bg-lf-dw w-[30%] h-[140px] z-5 rounded-xl flex items-center justify-center">
-        {/* Social Media inside Right Box */}
-        <div className="flex gap-4 z-10">
-          <a
-            href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-[#E6A61E] text-[#000349] hover:bg-[#c98d15] transition-colors"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-[#E6A61E] text-[#000349] hover:bg-[#c98d15] transition-colors"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-[#E6A61E] text-[#000349] hover:bg-[#c98d15] transition-colors"
-          >
-            <FaInstagram />
-          </a>
+        src={svg_bg.svg_bg_2}
+        alt="layout"
+        fill
+        className="absolute inset-0 object-cover -z-10"
+      />
+
+      <div className=" container w-full flex flex-col gap-10  ">
+        {/* Brand header */}
+          <div className="space-y-6 pl-10 w-[30%]">
+            <div className="flex items-center gap-3">
+              <h2 className="text-2xl border-l-5 border-lf-dy  font-bold text-lf-dy pl-3">Firm Logo</h2>
+            </div>
+            <p className="text-white/80 leading-relaxed">
+              Trusted advisors with proven experience in corporate, family, and
+              criminal law. Your success is our definition of justice.
+            </p>
+          </div>
+
+      {/*//& Main Content Grid */}
+        <div className="min-h-[60vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-l-[1px] border-white/50 relative pl-20">
+          <span className="absolute w-full left-0 top-[8%] h-[1px] bg-white/50 backdrop-blur-2xl" />
+          {/* contact us */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-3">
+                <h2 className="text-2xl font-bold text-lf-dy">contact info</h2>
+              </div>
+              {/* Contact Info */}
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3">
+                  <span className="p-2 bg-white/10 backdrop-blur-md rounded-full">
+                    <FaMapMarkerAlt className="text-lf-dy" />
+                  </span>
+                  <span className="text-sm">123 Legal Street, City, Country</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="p-2 bg-white/10 backdrop-blur-md rounded-full">
+                    <FaPhoneAlt className="text-lf-dy" />
+                  </span>
+                  <span className="text-sm">(123) 456-7890</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="p-2 bg-white/10 backdrop-blur-md rounded-full">
+                    <FaEnvelope className="text-lf-dy" />
+                  </span>
+                  <span className="text-sm">info@firmlaw.com</span>
+                </li>
+              </ul>
+            </div>
+          {/* Quick Links */}
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-lf-dy">Quick Links</h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Practice Areas", href: "/practice-areas" },
+                  { name: "About Us", href: "/about" },
+                  { name: "FAQ", href: "/faq" },
+                  { name: "Contact", href: "/contact" },
+                ].map((link) => (
+                  <li key={link.name} className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-lf-dy rounded-full" />
+                    <a
+                      href={link.href}
+                      className="text-white/80 hover:text-lf-dy transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          {/* Practice Areas */}
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-lf-dy">Practice Areas</h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "Corporate Law", icon: <FaBalanceScale /> },
+                  { name: "Family Law", icon: <FaHandshake /> },
+                  { name: "Criminal Defense", icon: <FaGavel /> },
+                ].map((area) => (
+                  <li key={area.name} className="flex items-center gap-3">
+                    <span className="p-2 bg-white/10 backdrop-blur-md rounded-full text-lf-dy">
+                      {area.icon}
+                    </span>
+                    <span className="text-white/80">{area.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          {/* Newsletter & Social */}
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-lf-dy">Connect With Us</h3>
+              <div className="space-y-4">
+                <p className="text-white/80">Stay updated with our latest news and insights.</p>
+                <div className="flex gap-4">
+                  {[FaFacebookF, FaLinkedinIn, FaInstagram].map((Icon, idx) => (
+                    <a
+                      key={idx}
+                      href="#"
+                      className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md hover:bg-lf-dy text-lf-dy hover:text-black transition-all duration-300"
+                    >
+                      <Icon />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="mt-16 pt-8 border-t border-white/10 absolute bottom-5 left-5 ">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-white/60 text-sm p-2 ">
+              © {new Date().getFullYear()} Firm Law. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-white/60 text-sm">
+              <a href="#" className="hover:text-lf-dy transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-lf-dy transition-colors">Terms of Service</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="absolute top-[-5%] left-[10%] bg-lf-dw w-[30%] h-[140px] z-5 rounded-xl flex flex-col items-center justify-center text-[#000349] font-semibold">
-        {/* Contact Info inside Left Box */}
-        <ul className="space-y-2 text-sm">
-          <li className="flex items-center gap-2">
-            <FaMapMarkerAlt /> 123 Legal Street, City, Country
-          </li>
-          <li className="flex items-center gap-2">
-            <FaPhoneAlt /> (123) 456-7890
-          </li>
-          <li className="flex items-center gap-2">
-            <FaEnvelope /> info@ogilvielaw.com
-          </li>
-        </ul>
-      </div>
-
-      {/* 🔹 Main Section */}
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Brand / Logo + Description */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold text-[#E6A61E]">firm Law</h2>
-          <p className="text-sm text-white/80 leading-relaxed max-w-[400px]">
-            Trusted advisors with proven experience in corporate, family, and
-            criminal law. Your success is our definition of justice.
-          </p>
-        </div>
-
-        {/* Quick Links */}
-        <div className="flex-center flex-col gap-3">
-          <h3 className="text-lg font-semibold mb-4 ">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-white/80">
-            <li>
-              <a href="/" className="hover:text-[#E6A61E] transition-colors">
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/practice-areas"
-                className="hover:text-[#E6A61E] transition-colors"
-              >
-                Practice Areas
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-[#E6A61E] transition-colors">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="/faq" className="hover:text-[#E6A61E] transition-colors">
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="hover:text-[#E6A61E] transition-colors"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* 🔹 Bottom Section */}
-      <div className="relative z-10 mt-10 pt-6 text-center text-sm text-white/60">
-        © {new Date().getFullYear()} firm name Law. All rights reserved.
-      </div>
+      {/* Floating Brand Text */}
+      <p className=" hidden lg:block absolute text-[140px] font-black text-white/10 -right-[335px] top-[320px] -rotate-90 pointer-events-none select-none">
+        FIRM Name
+      </p>
+      {/* Floating Brand Text */}
+      <p className="  absolute text-[30px] font-black text-white right-[15vh] top-[10vh] ">
+        FIRM logo
+      </p>
     </footer>
   );
 };

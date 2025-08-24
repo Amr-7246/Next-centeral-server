@@ -46,8 +46,8 @@ const OverView = () => {
     },
   ];
   return (
-    <section className='relative min-h-screen flex justify-start items-center w-full'>
-      <Image src={Home2.bg_1} alt={'bg'} className='absolute -z-5 inset-0 w-full h-full object-cover'/>
+    <section className='relative min-h-screen flex justify-start items-center w-full bg-lf-db'>
+      {/* <Image src={Home2.bg_1} alt={'bg'} className='absolute -z-5 inset-0 w-full h-full object-cover'/> */}
       <div className='flex-center flex-col gap-5 w-[45%] mt-20 '>
         <h2 className="text-4xl md:text-5xl font-bold text-white pb-5 w-[80%] flex justify-start border-b-5 border-amber-200 pl-3 ">the proven resutles</h2>
         <p className="text-[15px] md:text-[18px] text-lf-dw text-center w-[80%]">
