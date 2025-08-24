@@ -57,11 +57,12 @@ const Loading = ({ size = 'md', className = '' }) => {
 
   return (
     <div className={`flex items-center justify-center ${className}`}>
-      <motion.div className={`relative ${container}`} variants={containerVariants} animate="animate" >
+      loading
+      {/* <motion.div className={`relative ${container}`} variants={containerVariants} animate="animate" >
         {dots.map((dotConfig) => (
           <motion.div key={dotConfig.id} className={`${dot} bg-sky-400 rounded-full absolute`} style={dotConfig.style} variants={dotVariants} animate="animate" custom={dotConfig.id} />
         ))}
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }
