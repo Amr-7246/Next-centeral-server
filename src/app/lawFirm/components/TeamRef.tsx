@@ -85,7 +85,7 @@ const TeamRef = () => {
           </div>
         ))}
       </div>
-        <h2 className="text-[25px] text-black border-l-4 border-black pl-3 ">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy">our team</span></h2>
+      <h2 className="text-[25px] text-black border-l-4 border-black pl-3 ">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy">our team</span></h2>
     </div>
   );
 };
