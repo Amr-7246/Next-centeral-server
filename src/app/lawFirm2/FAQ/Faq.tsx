@@ -47,7 +47,7 @@ const Faq = () => {
   };
 
   return (
-    <section className='relative min-h-screen overflow-auto w-full flex items-center justify-center'>
+    <section className='relative min-h-screen overflow-auto w-full flex items-center justify-center bg-lf-db'>
       <div className='w-full mx-auto'>
         <ScrollStack
           itemDistance={100}
