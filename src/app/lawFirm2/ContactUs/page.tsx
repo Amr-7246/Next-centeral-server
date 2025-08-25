@@ -2,14 +2,14 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Topper from '@/components/Topper'
 import ContactForm from './components/ContactForm'
-import Hero from '../components/Hero/Hero'
+import Hero from './components/Hero/Hero'
 
 const page = () => {
   return (
     <div  className="overflow-hidden ">
       <div className="relative">
         <Hero/>
-        <Topper 
+        <Topper
         className={''}
         direction = {"bottom"}
         shapeColor = {"#252B3D"}
@@ -19,7 +19,7 @@ const page = () => {
       </div>
       <ContactForm/>
       <div className="relative">
-        <Topper 
+        <Topper
         className={''}
         direction = {"top"}
         shapeColor = {"#252B3D"}

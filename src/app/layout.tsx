@@ -7,7 +7,7 @@ import { UserInfoContextProvider } from "@/context/userInfoContext";
 import Footer from "./components/Footer"
 
 export const metadata: Metadata = {
-  title: "Southern Engineering",
+  title: "Next Centeral Server",
   description: "A boilerplate for all repeated processes",
   icons: {
     icon: '/logo.png'

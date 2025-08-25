@@ -20,7 +20,7 @@ const Testimonials = () => {
     {
       id: 3,
       title: "Client Commitment",
-      description: "Our clients’ success is our top priority at every stage.",
+      description: "Our clients' success is our top priority at every stage.",
       icon: <Users className="w-6 h-6 text-[#E6A61E]" />,
     },
     {
@@ -36,116 +36,110 @@ const Testimonials = () => {
       id: 1,
       name: "Sarah Mitchell",
       role: "Entrepreneur",
-      feedback:
-        "The team provided exceptional guidance during my corporate case. Their professionalism and dedication were unmatched.",
+      feedback: "The team provided exceptional guidance during my corporate case. Their professionalism and dedication were unmatched.",
+      imgUrl: "/assets/lowFirm/about/team_1.jpg",
     },
     {
       id: 2,
       name: "James Carter",
       role: "Small Business Owner",
-      feedback:
-        "I felt protected and well-informed throughout my legal process. Truly a law firm that values its clients.",
+      feedback: "I felt protected and well-informed throughout my legal process. Truly a law firm that values its clients.",
+      imgUrl: "/assets/lowFirm/about/team_2.jpg",
     },
     {
       id: 3,
       name: "Emily Rodriguez",
       role: "Private Client",
-      feedback:
-        "They handled my case with integrity and care. I would highly recommend them to anyone seeking reliable legal support.",
-    },
-    {
-      id: 4,
-      name: "Sarah Mitchell",
-      role: "Entrepreneur",
-      feedback:
-        "The team provided exceptional guidance during my corporate case. Their professionalism and dedication were unmatched.",
-    },
-    {
-      id: 5,
-      name: "James Carter",
-      role: "Small Business Owner",
-      feedback:
-        "I felt protected and well-informed throughout my legal process. Truly a law firm that values its clients.",
-    },
-    {
-      id: 6,
-      name: "Emily Rodriguez",
-      role: "Private Client",
-      feedback:
-        "They handled my case with integrity and care. I would highly recommend them to anyone seeking reliable legal support.",
+      feedback: "They handled my case with integrity and care. I would highly recommend them to anyone seeking reliable legal support.",
+      imgUrl: "/assets/lowFirm/about/team_3.jpg",
     },
   ];
 
   return (
-    <div className="w-full py-12 relative px-6 space-y-16 ">
+    <div className="w-full py-20 relative px-6 space-y-16 bg-gradient-to-b from-lf-g to-black">
       <Image
-          src={svg_bg.svg_bg_3}
-          alt="layout"
-          fill
-          className="absolute inset-0 object-cover -z-10"
-        />
+        src={svg_bg.svg_bg_3}
+        alt="layout"
+        fill
+        className="absolute inset-0 object-cover opacity-20 -z-10"
+      />
+
       {/* Core Values */}
-      <div className="my-10 px-5 flex flex-row justify-between items-center" >
-        <h2 className="text-[20px] w-fit text-lf-dy relative pb-2" >
-          Our Guiding Principles
-          <span className="absolute w-full h-[2px] left-0 bottom-0  bg-lf-dy" />
-        </h2>
-        <h2 className="text-[15px] w-fit text-lf-w relative pb-2" >
-          The foundation of every case we handle is built on integrity, excellence, and trust
-          <span className="absolute w-full h-[2px] left-0 bottom-0 bg-lf-w" />
-        </h2>
-      </div>
-      <div className="grid md:grid-cols-4 gap-8">
-        {coreValues.map((value) => (
-          <div
-            key={value.id}
-            className="relative flex flex-col items-center text-center space-y-4 backdrop-blur-md bg-lf-w/10 rounded-xl p-6 shadow-sm"
-          >
-            <span className="absolute top-2 left-2 animate-pulse" >{value.icon}</span>
-            <h3 className="text-lg font-semibold text-amber-200">{value.title}</h3>
-            <p className="text-sm text-lf-dw">{value.description}</p>
-            {/*//& Decorative corner accents */}
+      <div className="relative">
+        <div className="my-10 px-5 flex flex-col md:flex-row justify-between items-center gap-10">
+          <h2 className="text-[32px] md:text-[36px] font-bold w-fit text-lf-dy relative pb-2">
+            Our Guiding Principles
+            <span className="absolute w-full h-[2px] left-0 bottom-0 bg-lf-dy" />
+          </h2>
+          <p className="text-[18px] max-w-xl text-center md:text-right text-lf-w relative pb-2">
+            The foundation of every case we handle is built on integrity, excellence, and trust
+            <span className="absolute w-1/2 h-[2px] right-0 bottom-0 bg-lf-w" />
+          </p>
+        </div>
 
-            {/* Top Left Corner Box */}
-              <span className="w-[150px] rounded-tl-2xl absolute h-[80px] border border-b-0 border-r-0 border-white left-[0px] top-[0px]" />
+        <div className="grid md:grid-cols-4 gap-8 mt-16">
+          {coreValues.map((value) => (
+            <div
+              key={value.id}
+              className="relative group flex flex-col items-center text-center space-y-4 backdrop-blur-md bg-lf-w/5 rounded-xl p-8 shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:bg-lf-w/10"
+            >
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-lf-g rounded-full flex items-center justify-center shadow-lg border-2 border-lf-dy">
+                {value.icon}
+              </div>
 
-            {/* Bottom Right Corner Box */}
-              <span className="w-[80px] rounded-br-2xl absolute h-[120px] border border-t-0 border-l-0 border-lf-dy right-[0px] bottom-[0px]" />
+              <h3 className="text-xl font-semibold text-amber-200 mt-6">{value.title}</h3>
+              <p className="text-sm text-lf-dw">{value.description}</p>
 
-          </div>
-        ))}
+              <div className="absolute inset-0 border border-lf-dy/20 rounded-xl transition-all duration-500 group-hover:border-lf-dy/50" />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Testimonials */}
-      <div className="mb-10 mt-[100px] px-5 flex flex-row justify-between items-center" >
-        <h2 className="text-[20px] w-fit text-lf-dy relative pb-2" >
-          Voices of Trust
-          <span className="absolute w-full h-[2px] left-0 bottom-0  bg-lf-dy" />
+      <div className="mt-32">
+        <h2 className="text-[32px] md:text-[36px] font-bold text-center text-lf-dy mb-16">
+          Client Testimonials
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-lf-dy to-transparent mx-auto mt-4" />
         </h2>
-        <h2 className="text-[15px] w-fit text-lf-w relative pb-2" >
-          Our clients’ experiences are the strongest proof of our dedication and results
-          <span className="absolute w-full h-[2px] left-0 bottom-0 bg-lf-w" />
-        </h2>
-      </div>
-      <div className="grid md:grid-cols-3 gap-8">
-        {testimonials.map((t) => (
-          <div key={t.id} className= " backdrop-blur-md relative bg-lf-g/50 rounded-lg shadow px-6 pt-[50px] flex flex-col justify-between space-y-4" >
-            <Quote className="w-6 h-6 text-[#E6A61E] absolute top-3 left-3 " />
-            <p className="text-lf-w italic">“{t.feedback}”</p>
-            <div className="mt-2">
-              <h4 className="font-semibold text-amber-200">{t.name}</h4>
-              <p className="text-sm text-lf-w">{t.role}</p>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.id}
+              className="group relative bg-gradient-to-br from-lf-w/5 to-transparent backdrop-blur-sm rounded-xl p-8 shadow-xl"
+              style={{
+                transform: `translateY(${index % 2 === 0 ? "2rem" : "0"})`
+              }}
+            >
+              {/* Quote Icon */}
+              <Quote className="absolute top-4 right-4 w-8 h-8 text-lf-dy opacity-20 transform -scale-x-100" />
+
+              {/* Content */}
+              <div className="relative z-10 flex flex-col items-center text-center space-y-4">
+                <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden border-2 border-lf-dy transform transition-transform duration-500 group-hover:scale-110">
+                  <Image
+                    src={testimonial.imgUrl}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="text-lf-dw text-sm italic">{testimonial.feedback}</p>
+                <div>
+                  <h4 className="text-amber-200 font-semibold">{testimonial.name}</h4>
+                  <p className="text-xs text-lf-dw/80">{testimonial.role}</p>
+                </div>
+              </div>
+
+              {/* Decorative Borders */}
+              <div className="absolute inset-0">
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-lf-dy rounded-tl-xl" />
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-lf-dy rounded-br-xl" />
+              </div>
             </div>
-            {/*//& Decorative corner accents */}
-
-            {/* Top Left Corner Box */}
-              <span className="w-[150px] rounded-tl-2xl absolute h-[80px] border border-b-0 border-r-0 border-white left-[0px] top-[0px]" />
-
-            {/* Bottom Right Corner Box */}
-              <span className="w-[80px] rounded-br-2xl absolute h-[150px] border border-t-0 border-l-0 border-lf-dy right-[0px] bottom-[0px]" />
-
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

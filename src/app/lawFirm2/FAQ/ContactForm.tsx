@@ -14,13 +14,15 @@ const ContactForm = () => {
         </div>
         <span className='absolute inset-0  rounded-2xl bg-black/80 ' />
         {/* //& Form it self */}
-          <form className="space-y-4 gap-5 bg-gradient-to-br from-black to-lf-db w-[40%] absolute -top-55  right-20 px-5 py-[100px] rounded-xl "  >
+          <form className="space-y-6 gap-5 bg-gradient-to-br from-black to-lf-db w-[40%] absolute -top-55 right-20 px-8 py-[100px] rounded-xl shadow-2xl border border-white/10">
+            <h3 className="text-2xl font-semibold text-white mb-6">Schedule a Consultation</h3>
             <div>
-              <label className="block mb-1 text-sm font-medium">Full Name</label>
+              <label className="block mb-2 text-sm font-medium text-white/90">Full Name *</label>
               <input
                 type="text"
-                placeholder="Your Name"
-                className="w-full border-b bg-white/10 backdrop-blur-lg border-[#D9D9E2]  p-3 focus:outline-none "
+                placeholder="Your Full Name"
+                className="w-full border-b bg-white/10 backdrop-blur-lg border-[#D9D9E2] p-4 focus:outline-none focus:border-sky-400 transition-colors text-white placeholder:text-white/50"
+                required
               />
             </div>
             <div>
@@ -69,7 +71,7 @@ export default ContactForm
 
       // {/* Top grid layout */}
       // <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        
+
       //   {/* Contact Form */}
       //   <div>
       //     <h2 className="text-2xl font-semibold text-white mb-6">Get in Touch</h2>

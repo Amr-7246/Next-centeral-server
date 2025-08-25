@@ -5,7 +5,7 @@ import Story from './components/Story'
 import Testimonials from './components/Testimonials'
 import TruthtHook from './components/TruthtHook'
 import Team from './components/Team'
-import Hero from '../components/Hero/Hero'
+import Hero from './components/Hero/Hero'
 
 const page = () => {
   return (
@@ -16,7 +16,7 @@ const page = () => {
       <Team/>
       <TruthtHook/>
       <div className="relative">
-        <Topper 
+        <Topper
         className={''}
         direction = {"top"}
         shapeColor = {"#252B3D"}

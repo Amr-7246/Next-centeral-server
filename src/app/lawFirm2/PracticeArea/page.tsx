@@ -4,7 +4,7 @@ import Topper from '@/components/Topper'
 import PowerPreview from './components/PowerPreview'
 import FirmStratigy from './components/FirmStratigy'
 import Quot from './components/Quot'
-import Hero from '../components/Hero/Hero'
+import Hero from './Hero/Hero'
 
 const page = () => {
   return (

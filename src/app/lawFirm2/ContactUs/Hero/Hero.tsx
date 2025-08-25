@@ -23,14 +23,14 @@ const Hero = () => {
           <DarkVeil hueShift={15} noiseIntensity={0.2} scanlineIntensity={0} speed={0} scanlineFrequency={3} warpAmount={3} />
           {/*//& Horizontal blured NavBar & social icons */}
             <div className='flex flex-col gap-3 absolute top-8 right-8' >
-              <div className='flex flex-col gap-8 rounded-2xl p-4 border border-sky-400/30 bg-gradient-to-b from-black/40 to-black/20 backdrop-blur-lg text-white shadow-lg' >
+              <div className='flex flex-col gap-8 rounded-2xl p-3 border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
                 {[<GoHomeFill/>,<MdDocumentScanner/>,<TbPointerQuestion/>,<FaTeamspeak/> ].map((linkIcon, idx) => (
-                  <span key={idx} className='p-3 text-[23px] hover:text-sky-400 transition-colors duration-300 cursor-pointer transform hover:scale-110'>{linkIcon}</span>
+                  <span key={idx} className='p-3 text-[23px] '>{linkIcon}</span>
                 ))}
               </div>
-              <div className='flex flex-col gap-4 rounded-2xl p-4 border border-sky-400/30 bg-gradient-to-b from-black/40 to-black/20 backdrop-blur-lg text-white shadow-lg' >
+              <div className='flex flex-col gap-4  rounded-2xl p-3 border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
                 {[ <FaLinkedin/>,<FaFacebookF/>,<FaInstagram/> ].map((socialIcon, idx) => (
-                  <span key={idx} className='p-3 text-[23px] hover:text-sky-400 transition-colors duration-300 cursor-pointer transform hover:scale-110'>{socialIcon}</span>
+                  <span key={idx} className='p-3 text-[23px] '>{socialIcon}</span>
                 ))}
               </div>
             </div>
@@ -39,24 +39,13 @@ const Hero = () => {
             </div>
           {/*//& Content Container */}
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className="w-[80%] mb-[150px] text-center space-y-8">
-                <h1 className="text-6xl font-bold tracking-tight">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600"> Protecting </span>
+              <div className="w-[80%] mb-[150px] text-center space-y-6">
+                <h1 className="text-6xl  font-bold ">
+                  <span className="text-transparent" style={{ WebkitTextStroke: "2px #60A5FA " }}> Protecting </span>
                   <span className="text-white mx-3">Your Rights</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600"> Securing </span>
+                  <span className="text-transparent" style={{ WebkitTextStroke: "2px #60A5FA " }}> Securing </span>
                   <span className="text-white ml-3">Your Future</span>
                 </h1>
-                <p className="text-xl text-white/80 max-w-3xl mx-auto mt-6 leading-relaxed">
-                  Excellence in legal representation, commitment to justice, and dedication to our clients' success
-                </p>
-                <div className="flex justify-center gap-6 mt-8">
-                  <button className="px-8 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors">
-                    Schedule Consultation
-                  </button>
-                  <button className="px-8 py-3 border border-white/30 text-white rounded-lg hover:bg-white/10 transition-all">
-                    Learn More
-                  </button>
-                </div>
               </div>
             </div>
         </div>

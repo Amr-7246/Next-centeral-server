@@ -6,7 +6,7 @@ const FirmPref = () => {
   return (
     <>
       {/*//& text content */}
-        <div className='absolute left-0 top-[30%] border-l-2 border-white/50 h-[50%] w-[40vw] flex flex-col items-between justify-between'>
+        <div className=' pt-[100px] absolute left-0 top-[30%] border-l-2 border-white/50 h-[50%] w-[40vw] flex flex-col items-between justify-between'>
           <div>
             <p className="text-lf-dw text-[17px] w-full mx-auto border-b-2 border-white/50 p-5 text-center">
               Trusted legal advisors with decades of combined experience in business, family, and corporate law.
