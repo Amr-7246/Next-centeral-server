@@ -16,27 +16,22 @@ const Hero = () => {
 
 
       {/* Hero Content */}
-      <div className="relative flex-center overflow-hidden bg-gradient-to-br from-black/80 via-black/70 to-black/80 backdrop-blur-sm w-[95%] h-[85%] rounded-2xl shadow-2xl">
+      <div className="relative flex-center overflow-hidden bg-black/60 w-[95%] h-[85%] rounded-2xl shadow-lg">
         <Image
           src={Home.layerMask_1}
           alt={"layerMask"}
-          className="absolute opacity-20 inset-0 w-full h-full object-cover -z-10 transform scale-105 animate-slow-pulse"
+          className="absolute opacity-30 inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="w-[80%] h-[80%] flex flex-col gap-6 justify-center">
+        <div className="w-[80%] h-[80%] flex flex-col gap-4 justify-center">
           <span
-            style={{ color: "transparent", WebkitTextStroke: "4px #0C1B63", textShadow: "0 4px 12px rgba(12, 27, 99, 0.3)" }}
-            className="text-[60px] leading-tight font-bold tracking-tight"
+            style={{ color: "transparent", WebkitTextStroke: "4px #0C1B63 ", }}
+            className="text-[50px]"
           >
             Protecting Your 
-            <span 
-              style={{ color: "white", WebkitTextStroke: "1px white", textShadow: "0 4px 12px rgba(255, 255, 255, 0.2)" }} 
-              className="text-white mx-3 animate-text-glow"
-            >
-              Rights, Securing
-            </span>
+            <span style={{ color: "white", WebkitTextStroke: "1px white ", }} className="text-white mx-3 ">Rights, Securing</span>
             Your Future
           </span>
-          <p className="text-lg md:text-xl text-amber-200 max-w-[650px] leading-relaxed font-light tracking-wide">
+          <p className="text-lg md:text-xl text-amber-200 max-w-[650px]">
             {Home.lowFirmTextContent.home.hero.subtext}
           </p>
         </div>

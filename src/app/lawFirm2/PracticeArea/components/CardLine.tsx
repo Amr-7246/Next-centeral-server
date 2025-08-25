@@ -20,14 +20,14 @@ const CardLine = ({image, title, pref, cardS, right, PStyle, cta = " . . read Mo
     <div className='relative h-[300px] ' >
       {/*//& pining Dots */}
       <div className="absolute left-1/2 top-0 -translate-x-1/2 z-20">
-        <div className="w-6 h-6 bg-gradient-to-br from-white to-amber-200 rounded-full shadow-lg animate-pulse" />
+        <div className="w-5 h-5 bg-white rounded-full  shadow-lg" />
       </div>
       <div className="absolute h-full left-1/2 top-0 -translate-x-1/2 z-10">
-        <div className="w-[2px] h-full bg-gradient-to-b from-white via-amber-200 to-lf-dw/50 shadow-lg" />
+        <div className="w-1 h-full bg-lf-dw/50 shadow-lg" />
       </div>
       {/*//& card */}
-      <div className={`${finallCardStyles} w-[50%] h-[180px] transform hover:scale-[1.02] transition-all duration-500`}>
-        <div className="relative w-[95%] h-full lg:w-full bg-black/95 rounded-2xl shadow-2xl overflow-hidden flex flex-col justify-center p-10 mx-auto backdrop-blur-sm">
+      <div className={`${finallCardStyles} w-[50%] h-[180px]`}>
+        <div className="relative w-[95%] h-full lg:w-full bg-black/90 rounded-2xl shadow-xl overflow-hidden flex flex-col justify-center p-10 mx-auto">
           {/* Background */}
           <Image
             src={image}

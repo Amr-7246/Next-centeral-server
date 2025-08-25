@@ -14,7 +14,7 @@ type FAQItem = {
 const faqData: FAQItem[] = [
   {
     question: "What areas of law does your firm specialize in?",
-    answer: "Our firm excels in multiple practice areas including Corporate Law, Mergers & Acquisitions, Family Law, Real Estate Law, Intellectual Property, and Criminal Defense. We provide comprehensive legal solutions tailored to both businesses and individuals, backed by our team of specialized attorneys.",
+    answer: "Our firm provides legal services in corporate law, family law, real estate, and criminal defense. We also offer advisory services for businesses and individuals.",
     icon: <FiBriefcase className="text-sky-400 w-6 h-6" />,
   },
   {
@@ -64,26 +64,26 @@ const Faq = () => {
           {faqData.map((item, index) => (
             <ScrollStackItem
               key={index}
-              itemClassName="w-[80%] backdrop-blur-sm bg-gradient-to-br from-black/90 to-black/70 border border-sky-400/30 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-400/20 transition-all duration-500"
+              itemClassName="w-[80%] backdrop-blur-sm bg-black/70 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300"
             >
-              <div className="h-full flex flex-col justify-between p-6">
-                <div className="flex items-start gap-6">
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-sky-500/20 to-sky-400/10 backdrop-blur-sm shadow-inner">
+              <div className="h-full flex flex-col justify-between">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-full bg-lf-db/30 backdrop-blur-sm">
                     {item.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 tracking-tight">
+                    <h3 className="text-2xl font-semibold text-white mb-4">
                       {item.question}
                     </h3>
-                    <p className="text-white/80 leading-relaxed text-lg">
+                    <p className="text-white/80 leading-relaxed">
                       {item.answer}
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-between items-center mt-8 pt-6 border-t border-sky-400/20">
-                  <span className="text-sky-400 text-sm font-medium tracking-wide uppercase">Read more</span>
+                <div className="flex justify-between items-center mt-6 pt-6 border-t border-sky-400/20">
+                  <span className="text-sky-400 text-sm">Click to expand</span>
                   <ChevronDown
-                    className={`w-6 h-6 text-sky-400 transition-all duration-500 transform hover:text-sky-300 ${
+                    className={`w-5 h-5 text-sky-400 transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : "rotate-0"
                     }`}
                   />
@@ -91,28 +91,16 @@ const Faq = () => {
               </div>
             </ScrollStackItem>
           ))}
-          <ScrollStackItem itemClassName="w-[80%] backdrop-blur-md bg-gradient-to-br from-sky-900/30 to-black/30 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-500">
-            <div className="h-full flex flex-col justify-center items-center text-center px-12 py-10">
-              <div className="w-16 h-1 bg-sky-400 mb-8 rounded-full"></div>
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 mb-8">
+          <ScrollStackItem itemClassName="w-[80%] backdrop-blur-md bg-black/30 border border-sky-400/30">
+            <div className="h-full flex flex-col justify-center items-center text-center px-8">
+              <h2 className="text-3xl font-bold text-sky-400 mb-6">
                 Why Choose Our Firm
               </h2>
-              <p className="text-white/90 text-xl leading-relaxed max-w-3xl">
+              <p className="text-white/90 text-lg leading-relaxed">
                 Choosing legal representation is more than hiring a lawyer—it's securing an ally.
                 Our firm combines decades of proven experience with a client-first approach,
                 ensuring that every case is handled with dedication, transparency, and strategic insight.
               </p>
-              <div className="flex gap-8 mt-10">
-                <div className="px-6 py-3 bg-sky-500/20 rounded-lg backdrop-blur-sm border border-sky-400/30">
-                  <span className="text-sky-400 font-medium">Excellence</span>
-                </div>
-                <div className="px-6 py-3 bg-sky-500/20 rounded-lg backdrop-blur-sm border border-sky-400/30">
-                  <span className="text-sky-400 font-medium">Dedication</span>
-                </div>
-                <div className="px-6 py-3 bg-sky-500/20 rounded-lg backdrop-blur-sm border border-sky-400/30">
-                  <span className="text-sky-400 font-medium">Results</span>
-                </div>
-              </div>
             </div>
           </ScrollStackItem>
         </ScrollStack>
