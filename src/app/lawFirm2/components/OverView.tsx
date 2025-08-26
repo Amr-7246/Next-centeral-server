@@ -54,13 +54,14 @@ const OverView = () => {
           Precision. Dedication. Results. Discover the expertise that defines our legal practice
         </p>
       </div>
-      <div className='absolute top-[70%] right-[10%]'>
-        <CardSwap cardDistance={60} verticalDistance={70} delay={8000} pauseOnHover={true} >
+      <div className='absolute top-[70%] right-[10%] '>
+        <CardSwap width={660} cardDistance={60} verticalDistance={70} delay={8000} pauseOnHover={true} >
         {/*//& Proven resultes Cards */}
           {caseStudies.map((item, idx) => (
             <Card
               key={idx}
               title={item.title}
+              className=''
             >
               <Image
                 src={item.image}
@@ -69,7 +70,7 @@ const OverView = () => {
                 className="absolute inset-0 object-cover opacity-20 "
               />
 
-              <div className="relative flex flex-col gap-6 z-10 py-10 px-5">
+              <div className="relative flex flex-col gap-6 z-10 py-10 px-5 ">
                 <h2 className="text-[20px] text-center font-bold text-white flex items-center gap-3">
                   {item.title}
                 </h2>
@@ -81,7 +82,7 @@ const OverView = () => {
               </div>
               <div className="absolute bottom-5 left-5">
                 <IconicBtn text={"Learn More"} icon={<CiViewList />} iconStyle={'bg-black text-white'} buttonColors={'bg-white text-black mx-auto  '} />
-              </div> 
+              </div>
             </Card>
           ))}
         </CardSwap>

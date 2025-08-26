@@ -16,7 +16,7 @@ const TeamRef = () => {
         <Scale key="1" className="w-6 h-6 text-[#E6A61E]" />,
         <Briefcase key="2" className="w-6 h-6 text-[#E6A61E]" />,
       ],
-      img: "/assets/lowFirm/about/team_1.jpg", // replace with Envato image
+      img: "/assets/lowFirm/about/team_5.jpg", // replace with Envato image
     },
     {
       id: 2,
@@ -45,11 +45,11 @@ const TeamRef = () => {
     <section className='min-h-screen flex-col gap-5 bg-white py-20 '>
       {/*//& Section Heading */}
         <div className="mb-[80px] px-10 flex flex-col md:flex-row justify-between items-center">
-          <h2 className="text-[22px] font-bold text-[#000349] relative pb-2">
+          <h2 className="text-[22px] font-black text-lf-g relative pb-2">
             Meet Our Legal Team
             <span className="absolute w-full h-[2px] left-0 bottom-0 bg-[#E6A61E]" />
           </h2>
-          <p className="text-[15px] text-[#252B3D] max-w-xl mt-3 md:mt-0 text-center">
+          <p className="text-[15px] text-lf-g max-w-xl mt-3 md:mt-0 text-center">
             Our attorneys combine decades of proven experience with relentless dedication to protect our clients’ rights and interests.
           </p>
         </div>
@@ -95,7 +95,7 @@ const TeamRef = () => {
             </div>
           ))}
         </div>
-        <h2 className="text-[25px]   text-black border-l-4 border-black pl-5 mt-10 ml-5">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy cursor-pointer">our team</span></h2>
+        <h2 className="text-[25px] text-lf-g border-l-4 border-black pl-5 mt-10 ml-5">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy cursor-pointer">our team</span></h2>
     </section>
   )
 }

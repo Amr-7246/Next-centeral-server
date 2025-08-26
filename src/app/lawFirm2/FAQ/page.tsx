@@ -1,4 +1,5 @@
 "use client"
+import Topper from "@/components/Topper";
 import Footer from "../components/Footer";
 import ContactForm from "./ContactForm";
 import Faq from "./Faq";
@@ -9,7 +10,16 @@ export default function Page() {
     <section className="overflow-hidden ">
       <Hero/>
       <Faq />
-      <ContactForm/>
+      <div className="relative">
+        <Topper
+        className={''}
+        direction = {"top"}
+        shapeColor = {"#fff"}
+        circleColor ={ "#fff"}
+        iconColor = {"#000000"}
+        />
+        <ContactForm/>
+      </div>
       <Footer/>
     </section>
   );

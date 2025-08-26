@@ -12,10 +12,10 @@ const Nav = () => {
       <div className="relative">
         <button
           onClick={() => setIsNavOpen(!isNavOpen)}
-          className="absolute z-10 top-0 right-0 w-14 h-14 cursor-pointer bg-amber-200/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-amber-200/30 transition-all duration-300"
+          className="absolute z-10 top-0 right-2 w-14 h-14 cursor-pointer bg-white/50 backdrop-blur-xl border border-black/50  rounded-full flex items-center justify-center hover:bg-amber-200/30 transition-all duration-300"
         >
           <span className="sr-only">Toggle Navigation</span>
-          <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-6 h-6 text-black/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isNavOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -23,7 +23,7 @@ const Nav = () => {
             )}
           </svg>
         </button>
-        
+
         {isNavOpen && (
           <div className="mt-20 bg-black/50 backdrop-blur-md rounded-2xl p-4 space-y-4">
             <nav className="flex flex-col space-y-4">

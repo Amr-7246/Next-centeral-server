@@ -6,17 +6,12 @@ import { Scale } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className=" text-white pt-24 pb-6 min-h-screen relative">
-      <Image
-        src={svg_bg.svg_bg_2}
-        alt="layout"
-        fill
-        className="absolute inset-0 object-cover -z-10"
-      />
+    <footer className=" text-white pt-30 pb-6 min-h-screen relative">
+      <Image src={svg_bg.svg_bg_2} alt="layout" fill className="absolute inset-0 object-cover -z-10" />
 
       <div className=" container w-full flex flex-col gap-10  ">
         {/* Brand header */}
-          <div className="space-y-6 pl-10 w-[30%]">
+          <div className="space-y-6 pl-10 w-[40%]">
             <div className="flex items-center gap-3">
               <h2 className="text-2xl border-l-5 border-lf-dy  font-bold text-lf-dy pl-3">Firm Logo</h2>
             </div>
@@ -27,8 +22,8 @@ const Footer = () => {
           </div>
 
       {/*//& Main Content Grid */}
-        <div className="min-h-[60vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-l-[1px] border-white/50 relative pl-20">
-          <span className="absolute w-full left-0 top-[8%] h-[1px] bg-white/50 backdrop-blur-2xl" />
+        <div className="min-h-[60vh] pt-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-l-[1px] border-white/50 relative pl-20">
+          <span className="absolute w-full left-0 top-[28%] h-[1px] bg-white/50 backdrop-blur-2xl" />
           {/* contact us */}
             <div className="space-y-6">
               <div className="flex items-center gap-3">

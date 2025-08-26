@@ -4,7 +4,6 @@ import DarkVeil from '@/reactBits/BGs/DarkVeil'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Scale, Shield, BookOpen, Gavel } from "lucide-react"
-import Nav from './Nav'
 import { Home } from '@/pub/assets/lowFirm'
 import { FaLinkedin, FaFacebookF, FaInstagram } from "react-icons/fa"
 import { MdDocumentScanner } from "react-icons/md";
@@ -13,6 +12,8 @@ import { TbPointerQuestion } from "react-icons/tb";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import { FaTeamspeak } from "react-icons/fa";
 import FirmPref from './FirmPref'
+import Nav from '../../components/Hero/Nav'
+import { FaInfo } from "react-icons/fa";
 
 const Hero = () => {
 
@@ -22,20 +23,20 @@ const Hero = () => {
         <div className='relative w-full h-screen'>
           <DarkVeil hueShift={15} noiseIntensity={0.2} scanlineIntensity={0} speed={0} scanlineFrequency={3} warpAmount={3} />
           {/*//& Horizontal blured NavBar & social icons */}
-            <div className='flex flex-col gap-3 absolute top-8 right-8' >
-              <div className='flex flex-col gap-8 rounded-2xl p-3 border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
-                {[<GoHomeFill/>,<MdDocumentScanner/>,<TbPointerQuestion/>,<FaTeamspeak/> ].map((linkIcon, idx) => (
-                  <span key={idx} className='p-3 text-[23px] '>{linkIcon}</span>
+            <div className='flex flex-col gap-6 absolute top-8 right-8' >
+              <div className='flex flex-col gap-8 rounded-2xl px-3 py-6  border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
+                {[<GoHomeFill/>,<MdDocumentScanner/>,<TbPointerQuestion/>,<FaTeamspeak/>, <FaInfo/> ].map((linkIcon, idx) => (
+                  <span key={idx} className={`p-3 text-[23px] ${idx == 3 ? "text-lf-dy" : "" }`}>{linkIcon}</span>
                 ))}
               </div>
-              <div className='flex flex-col gap-4  rounded-2xl p-3 border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
+              <div className='flex flex-col gap-4  rounded-2xl px-3 py-6 border border-white/50 bg-white/30 backdrop-blur-lg text-white' >
                 {[ <FaLinkedin/>,<FaFacebookF/>,<FaInstagram/> ].map((socialIcon, idx) => (
                   <span key={idx} className='p-3 text-[23px] '>{socialIcon}</span>
                 ))}
               </div>
             </div>
             <div className='flex absolute top-8 left-8 gap-8 rounded-2xl p-5 border border-white/50 bg-white/30 backdrop-blur-lg text-sky-400 ' >
-              <h2 className='text-[20px] text-black font-black'>Firm Logo</h2>
+              <h2 className='text-[20px] text-white font-black'>Firm Logo</h2>
             </div>
           {/*//& Content Container */}
             <div className="absolute inset-0 flex items-center justify-center z-10">

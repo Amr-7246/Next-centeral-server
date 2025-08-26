@@ -33,10 +33,10 @@ const FirmPref = () => {
     <div className="flex flex-col gap-10 pb-12 pt-16 items-center relative">
       {/* Company Story */}
       <div className="w-[90%] flex-col flex">
-        <h2 className="font-winky font-black z-2 text-center text-transparent bg-clip-text mt-5 bg-gradient-to-r from-amber-200 via-white to-amber-200 w-fit text-[36px] md:text-[44px] border-l-5 border-amber-200 pl-3">
+        <h2 className="font-winky font-black z-2 text-center text-transparent bg-clip-text mt-5 bg-gradient-to-r from-amber-200 via-white to-amber-200 w-fit text-[36px] md:text-[44px] border-l-6 rounded-md border-lf-dy pl-3">
           Advocating Justice Since 1985
         </h2>
-        <p className="text-sky-200 w-[80%] text-[18px] md:text-[18px] mt-3">
+        <p className="text-lf-dw w-[80%] text-[18px] md:text-[18px] mt-3">
           Founded on principles of trust and excellence, our law firm has guided
           clients through complex legal challenges with dedication, clarity, and
           professionalism.
