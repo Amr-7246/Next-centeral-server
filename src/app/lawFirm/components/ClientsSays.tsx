@@ -45,7 +45,7 @@ const ClientsSays = () => {
         className="absolute -z-1 inset-0 w-full h-full object-cover "
       />
       {/*//& Logo */}
-        <div className="font-bitcount z-10 py-3 absolute top-[12%] right-[5%] flex text-amber-200 font-bold text-[25px] flex-center gap-3">
+        <div className="font-bitcount z-10 py-3 absolute top-[12%] right-[5%] flex text-lf-dy font-bold text-[25px] flex-center gap-3">
           <span className=" rounded-full w-[50px] h-[50px] border-[10px] border-l-white border-r-lf-b border-t-lf-db border-b-lf-dy  " />
           firm logo
         </div>
@@ -62,30 +62,30 @@ const ClientsSays = () => {
               className="absolute z-1 inset-0 w-full h-full object-cover "
             />
             <div className='relative flex items-start justify-start p-5 flex-col gap-3 bg-black/85 w-full h-full z-2 '>
-              <h2 className="z-2 pt-5 text-center text-amber-200 text-[27px] w-[90%] mx-auto">
-                Our story is built on one principle . . 
-                When our clients succeed, so do we.  
+              <h2 className="z-2 pt-5 text-center text-lf-dy text-[27px] w-[90%] mx-auto">
+                Our story is built on one principle . .
+                When our clients succeed, so do we.
               </h2>
             </div>
           </div>
           <div className="absolute  bottom-2  left-15 z-5 flex justify-between items-center w-[30%] px-6 py-4 text-porc-lb">
             {/* Years of Practice */}
             <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50 first:border-none">
-              <Scale className="w-6 h-6 text-amber-200 mb-2" />  {/* Justice Scales Icon */}
+              <Scale className="w-6 h-6 text-lf-dy mb-2" />  {/* Justice Scales Icon */}
               <p className="text-sm font-bold">15+</p>
               <span className="text-[12px]">Years of Practice</span>
             </div>
 
             {/* Successful Cases */}
             <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50">
-              <Gavel className="w-6 h-6 text-amber-200 mb-2" />  {/* Gavel Icon */}
+              <Gavel className="w-6 h-6 text-lf-dy mb-2" />  {/* Gavel Icon */}
               <p className="text-sm font-bold">2,500+</p>
               <span className="text-[12px]">Successful Cases</span>
             </div>
 
             {/* Trusted Clients */}
             <div className="flex flex-col items-center text-center px-4 border-l-1 border-white/50">
-              <UserCheck className="w-6 h-6 text-amber-200 mb-2" />  {/* Verified Client Icon */}
+              <UserCheck className="w-6 h-6 text-lf-dy mb-2" />  {/* Verified Client Icon */}
               <p className="text-sm font-bold">5,000+</p>
               <span className="text-[12px]">Trusted Clients</span>
             </div>
@@ -108,7 +108,7 @@ const ClientsSays = () => {
 
                   {/* Client Info */}
                   <div className="mt-3">
-                    <h4 className="font-semibold text-amber-200 flex items-center gap-2">
+                    <h4 className="font-semibold text-lf-dy flex items-center gap-2">
                       {t.name}
                       <Award className="w-4 h-4 text-lf-dy" />
                     </h4>
@@ -126,9 +126,9 @@ const ClientsSays = () => {
 
         </div>
       {/*//& Markting Hook */}
-        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[10%] left-[3%] '> 
+        <div className='flex flex-center flex-col w-[30%] gap-8 absolute z-5 bottom-[10%] left-[3%] '>
           <p className='text-white text-[20px] text-center'>Protecting your rights with <span className='text-lf-dy'>strength and precision</span></p>
-          <ThreeDBtn text={'Contact Us Now'} buttonColors={'bg-amber-200 text-black'} spanColors={'bg-white'}/>
+          <ThreeDBtn text={'Contact Us Now'} buttonColors={'bg-lf-dy text-black'} spanColors={'bg-white'}/>
         </div>
     </section>
   )

@@ -1,11 +1,12 @@
-import React from "react";
-import { Scale, ShieldCheck, Briefcase } from "lucide-react";
-import { about } from "@/pub/assets/lowFirm";
-import Image from "next/image";
-import { ThreeDBtn } from "@/components/Buttons";
+import { IconicBtn, ThreeDBtn } from '@/components/Buttons';
+import { about } from '@/pub/assets/lowFirm';
+import TiltedCard from '@/reactBits/TiltedCard/TiltedCard'
+import { Scale, Briefcase, ShieldCheck } from 'lucide-react';
+import React from 'react'
+import { PiThreadsLogoBold } from "react-icons/pi";
 
 const TeamRef = () => {
-  const team = [
+    const team = [
     {
       id: 1,
       name: "Alexander Wright",
@@ -15,7 +16,7 @@ const TeamRef = () => {
         <Scale key="1" className="w-6 h-6 text-[#E6A61E]" />,
         <Briefcase key="2" className="w-6 h-6 text-[#E6A61E]" />,
       ],
-      img: about.team_4, // replace with Envato image
+      img: "/assets/lowFirm/about/team_5.jpg", // replace with Envato image
     },
     {
       id: 2,
@@ -26,7 +27,7 @@ const TeamRef = () => {
         <ShieldCheck key="1" className="w-6 h-6 text-[#E6A61E]" />,
         <Scale key="2" className="w-6 h-6 text-[#E6A61E]" />,
       ],
-      img: about.team_2,
+      img: "/assets/lowFirm/about/team_4.jpg",
     },
     {
       id: 3,
@@ -37,57 +38,66 @@ const TeamRef = () => {
         <Briefcase key="1" className="w-6 h-6 text-[#E6A61E]" />,
         <ShieldCheck key="2" className="w-6 h-6 text-[#E6A61E]" />,
       ],
-      img: about.team_5,
+      img: "/assets/lowFirm/about/team_3.jpg",
     },
   ];
-
   return (
-    <div className="w-full py-16 px-6 bg-white space-y-12">
-      {/* Section Heading */}
-      <div className="mb-[80px] flex flex-col md:flex-row justify-between items-center">
-        <h2 className="text-[22px] font-bold text-[#000349] relative pb-2">
-          Meet Our Legal Team
-          <span className="absolute w-full h-[2px] left-0 bottom-0 bg-[#E6A61E]" />
-        </h2>
-        <p className="text-[15px] text-[#252B3D] max-w-xl mt-3 md:mt-0 text-center">
-          Our attorneys combine decades of proven experience with relentless dedication to protect our clients’ rights and interests.
-        </p>
-      </div>
-
-      {/* Team Grid */}
-      <div className="grid md:grid-cols-3 gap-8 px-[100px]">
-        {team.map((member) => (
-          <div
-            key={member.id}
-            className="relative flex flex-col items-center text-center space-y-4 bg-black rounded-xl pb-6 shadow-sm"
-          >
-            <div className="w-full h-[300px] overflow-hidden rounded-t-lg">
-              <Image
-                src={member.img}
-                alt={member.name}
-                className="object-cover "
+    <section className='min-h-screen flex-col gap-5 bg-white py-20 '>
+      {/*//& Section Heading */}
+        <div className="mb-[80px] px-10 flex flex-col md:flex-row justify-between items-center">
+          <h2 className="text-[22px] font-black text-lf-g relative pb-2">
+            Meet Our Legal Team
+            <span className="absolute w-full h-[2px] left-0 bottom-0 bg-[#E6A61E]" />
+          </h2>
+          <p className="text-[15px] text-lf-g max-w-xl mt-3 md:mt-0 text-center">
+            Our attorneys combine decades of proven experience with relentless dedication to protect our clients’ rights and interests.
+          </p>
+        </div>
+      {/*//& Lawer card */}
+        <div className='flex-center grid md:grid-cols-3 gap-8 px-[50px]'>
+          {team.map((lawer, idx) =>(
+            <div className='flex-center rounded-2xl overflow-hidden flex-col gap-5 bg-black relative p-5'>
+              <TiltedCard
+                // imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+                //@ts-ignore
+                imageSrc={lawer.img}
+                altText={lawer.name}
+                captionText={lawer.role}
+                containerHeight="450px"
+                containerWidth="400px"
+                imageHeight="450px"
+                imageWidth="400px"
+                rotateAmplitude={12}
+                scaleOnHover={1.09}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text text-white mt-8 ml-8 bg-black/50 backdrop-blur-2xl border border-white py-2 px-5 rounded-xl ">
+                    {lawer.name}
+                  </p>
+                }
               />
-            </div>
-            <h3 className="text-lg font-semibold text-lf-dw">{member.name}</h3>
-            <p className="w-full text-sm font-medium text-lf-w px-6 flex justify-between" >
-              <div className="flex text-sm space-x-3">{member.icons}</div>
-              {member.role}
-            </p>
-            <p className="text-sm text-amber-200 px-5 ">
-              {member.bio}
-            </p>
-            <div className="relative z-5">
-              <ThreeDBtn text={"Read More"} buttonColors={"bg-lf-dy text-white"} spanColors={"bg-white"} />
-            </div>
-            {/* Decorative corners */}
-            <span className="w-[120px] rounded-tl-2xl absolute h-[60px] border-2 border-b-0 border-r-0 border-[#E6A61E] -left-3 -top-5 " />
-            <span className="w-[60px] rounded-br-2xl absolute h-[100px] border-2 border-t-0 border-l-0 border-black -right-3 -bottom-3" />
-          </div>
-        ))}
-      </div>
-      <h2 className="text-[25px] text-black border-l-4 border-black pl-3 ">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy">our team</span></h2>
-    </div>
-  );
-};
+              <div className="p-5 flex flex-col gap-3">
+                {/* <h3 className="text-lg font-semibold text-lf-dw">{lawer.name}</h3> */}
+                <p className="w-full text-[20px] font-medium text-lf-dy px-6 flex-center " >
+                  {/* <div className="flex text-sm space-x-3">{lawer.icons}</div> */}
+                  {lawer.role}
+                </p>
+                <p className="text-sm text-lf-dw px-2 ">
+                  {lawer.bio}
+                </p>
+                <div className="relative z-5 w-full flex-center">
+                  <IconicBtn text={"Read More"} icon={<PiThreadsLogoBold />} iconStyle={'bg-black text-white'} buttonColors={'bg-white/50 backdrop-blure-2xl text-black'} />
+                </div>
+              </div>
 
-export default TeamRef ;
+            </div>
+          ))}
+        </div>
+        <h2 className="text-[25px] text-lf-g border-l-4 border-black pl-5 mt-10 ml-5">A powerhouse of trusted lawyers . . Know more about <span className="underline text-lf-dy cursor-pointer">our team</span></h2>
+    </section>
+  )
+}
+
+export default TeamRef

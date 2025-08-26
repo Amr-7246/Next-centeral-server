@@ -4,25 +4,25 @@ import { Scale, Shield, BookOpen, Gavel } from "lucide-react";
 const FirmPref = () => {
   const features = [
     {
-      icon: <Scale className="w-8 h-8 text-black" />,
+      icon: <Scale className="" />,
       head: "Proven Expertise",
       description:
         "Decades of experience providing trusted legal representation across diverse practice areas.",
     },
     {
-      icon: <Shield className="w-8 h-8 text-emerald-400" />,
+      icon: <Shield className="" />,
       head: "Client Protection",
       description:
         "We safeguard client rights with integrity, ensuring security and peace of mind in every case.",
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-green-400" />,
+      icon: <BookOpen className="" />,
       head: "In-Depth Knowledge",
       description:
         "Our attorneys bring deep legal insight backed by continuous research and strategic thinking.",
     },
     {
-      icon: <Gavel className="w-8 h-8 text-amber-200" />,
+      icon: <Gavel className="" />,
       head: "Strong Advocacy",
       description:
         "Committed to delivering clear guidance and firm representation in and out of the courtroom.",
@@ -45,18 +45,15 @@ const FirmPref = () => {
 
       {/* Features Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-[95%] absolute -top-[60%] ">
-        {features.map((f, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-white/20 border-2 border-amber-300/50 backdrop-blur-sm p-6 rounded-2xl shadow-md hover:shadow-lg transition"
-          >
-            {f.icon}
-            <h3 className="mt-4 text-xl font-semibold text-amber-300">
-              {f.head}
-            </h3>
-            <p className="mt-2 text-white text-center text-sm">
-              {f.description}
-            </p>
+        {features.map((feature, index) => (
+          <div key={index} className=" relative backdrop-blur-md bg-white/10 p-6 rounded-lg border border-white/80 text-white">
+            <div className="flex flex-col items-center text-center">
+              <span className='absolute top-3 left-3 bg-black/50 rounded-full border-white border text-[10px] p-2'>
+                {feature.icon}
+              </span>
+              <h3 className="mt-4 text-lf-dy font-semibold">{feature.head}</h3>
+              <p className="mt-2 text-white/80 text-sm">{feature.description}</p>
+            </div>
           </div>
         ))}
       </div>
